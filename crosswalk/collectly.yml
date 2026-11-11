@@ -1,7 +1,7 @@
 provider: collectly
 apis_io: https://apis.io/providers/collectly/
 context: healthcare
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   patient:
     path_segment:

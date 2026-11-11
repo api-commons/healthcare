@@ -1,7 +1,7 @@
 provider: nextgen-healthcare
 apis_io: https://apis.io/providers/nextgen-healthcare/
 context: healthcare
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   patient:
     path_segment:

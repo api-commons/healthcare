@@ -21,7 +21,7 @@ generated. Every number below is a count of providers.
 | coverage | 9 | 8 | id 75%, code 62%, patient_id 62%, payer 62%, relationship 50%, status 50% | coverage 6, eligibility 3, eligibility_checks 1, insurances 1 |
 | health_claim | 8 | 6 | id 67%, status 67%, code 50%, patient_id 50%, payer 50%, practitioner_id 50%, service_date 50% | claims 5, explanationofbenefit 3, claim 1 |
 
-Cohort: 259 providers with harvested OpenAPI, 69 crosswalks. Of the providers exposing a patient: 63% create, 90% list, 76% fetch, 47% update, 24% delete. Generated 2026-11-10 by build.py.
+Cohort: 259 providers with harvested OpenAPI, 69 crosswalks. Of the providers exposing a patient: 63% create, 90% list, 76% fetch, 47% update, 24% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -30,7 +30,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - FHIR is to healthcare what Open Banking is to banking: 32 providers in this cohort publish nothing but FHIR resources. Counted once as HL7's voice, the market's own agreement shows.
-- A patient agrees on date of birth, gender, name and email -- the demographic core every EHR, telehealth platform and payer API carries.
+- A patient agrees on date of birth, gender, first and last name and email -- the demographic core every EHR, telehealth platform and payer API carries.
 - A practitioner agrees on name, NPI and specialty: the National Provider Identifier is the one identifier the US market shares.
 - Coverage agrees on the payer, the member's relationship and status, and a claim on its patient, practitioner, payer and date of service -- the payer side of healthcare is more uniform than the clinical side.
 - Clinical records (observations, conditions, prescriptions) agree only on a code and the patient: the code is the vocabulary (LOINC, SNOMED, ICD-10, RxNorm), and the structure around it is the provider's.
