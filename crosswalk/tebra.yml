@@ -54,6 +54,6 @@ concepts:
     - medicationrequest
     properties:
       code: type
-    core_coverage: 0.0
+    core_coverage: 0.333
     evidence:
     - openapi/_original/tebra-fhir-api-openapi.yml#GET /MedicationRequest

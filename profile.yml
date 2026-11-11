@@ -111,8 +111,8 @@ concepts:
     properties:
     - name: date_of_birth
       tier: core
-      providers: 23
-      share: 0.793
+      providers: 24
+      share: 0.828
       type: string
       spellings:
       - dob
@@ -120,11 +120,12 @@ concepts:
       - dateOfBirth
       - birthDate
       - birthdate
+      - birth_date
       - DateOfBirth
     - name: gender
       tier: core
-      providers: 22
-      share: 0.759
+      providers: 23
+      share: 0.793
       type: string
       spellings:
       - gender
@@ -144,8 +145,8 @@ concepts:
       - _id
     - name: first_name
       tier: core
-      providers: 19
-      share: 0.655
+      providers: 20
+      share: 0.69
       type: string
       spellings:
       - first_name
@@ -156,8 +157,8 @@ concepts:
       - givenName
     - name: last_name
       tier: core
-      providers: 19
-      share: 0.655
+      providers: 20
+      share: 0.69
       type: string
       spellings:
       - last_name
@@ -168,8 +169,8 @@ concepts:
       - familyName
     - name: email
       tier: core
-      providers: 18
-      share: 0.621
+      providers: 19
+      share: 0.655
       type: string
       spellings:
       - email
@@ -178,12 +179,29 @@ concepts:
       - Email
     - name: address
       tier: extended
-      providers: 12
-      share: 0.414
+      providers: 13
+      share: 0.448
       type: object
       spellings:
       - address
       - addresses
+    - name: created_at
+      tier: extended
+      providers: 11
+      share: 0.379
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created_date
+    - name: name
+      tier: extended
+      providers: 11
+      share: 0.379
+      type: string
+      spellings:
+      - name
+      - title
     - name: status
       tier: extended
       providers: 11
@@ -193,23 +211,6 @@ concepts:
       - state
       - status
       - State
-    - name: created_at
-      tier: extended
-      providers: 10
-      share: 0.345
-      type: string
-      spellings:
-      - created_at
-      - createdAt
-      - created_date
-    - name: name
-      tier: extended
-      providers: 10
-      share: 0.345
-      type: string
-      spellings:
-      - name
-      - title
     - name: city
       tier: extended
       providers: 9
@@ -237,6 +238,15 @@ concepts:
       - modified_at
       - last_modified
       - updatedAt
+    - name: phone
+      tier: extended
+      providers: 7
+      share: 0.241
+      type: array
+      spellings:
+      - phones
+      - phone
+      - mobile-phone
     - name: description
       tier: extended
       providers: 6
@@ -246,15 +256,16 @@ concepts:
       - text
       - notes
       - details
-    - name: phone
+    - name: patient_id
       tier: extended
       providers: 6
       share: 0.207
-      type: array
+      type: string
       spellings:
-      - phones
-      - mobile-phone
-      - phone
+      - patient_id
+      - member_id
+      - PatientId
+      - patientId
     - name: pronouns
       tier: extended
       providers: 6
@@ -269,19 +280,20 @@ concepts:
       type: string
       spellings:
       - ssn
-    long_tail_count: 382
+    long_tail_count: 388
     long_tail_sample:
     - code
     - metadata
-    - patient_id
+    - mrn
     - suffix
     - active
     - contact
     - country
     - language
-    - mrn
     - preferred_language
     - address1
+    - address_city
+    - address_state
     - emergency_contact
     - ethnicity
     - gender_identity
@@ -292,16 +304,16 @@ concepts:
     - zip
     - zip_code
     - address2
-    - address_city
     - address_line_1
     - address_line_2
-    - address_state
     - age
+    - allergies
     - appointments
     - chart_id
     - company
     - deleted
     - employer
+    - insurance
     - managing_organization
     - merged_into
     - occupation
@@ -310,7 +322,6 @@ concepts:
     - patient_status
     - photo
     - preferred_name
-    - previous_address
   practitioner:
     segments_seen:
       providers: 8
@@ -374,6 +385,16 @@ concepts:
       - lastname
       - LastName
       - surname
+    - name: npi
+      tier: core
+      providers: 12
+      share: 0.667
+      type: string
+      spellings:
+      - npi
+      - npiNumber
+      - NPINumber
+      - npi_number
     - name: first_name
       tier: core
       providers: 11
@@ -384,20 +405,10 @@ concepts:
       - firstName
       - firstname
       - FirstName
-    - name: npi
-      tier: core
-      providers: 11
-      share: 0.611
-      type: string
-      spellings:
-      - npi
-      - npiNumber
-      - NPINumber
-      - npi_number
     - name: specialty
       tier: core
-      providers: 9
-      share: 0.5
+      providers: 10
+      share: 0.556
       type: array
       spellings:
       - specialty
@@ -405,9 +416,9 @@ concepts:
       - specialties
       - specialization
     - name: name
-      tier: extended
-      providers: 8
-      share: 0.444
+      tier: core
+      providers: 9
+      share: 0.5
       type: string
       spellings:
       - name
@@ -416,8 +427,8 @@ concepts:
       - display_name
     - name: email
       tier: extended
-      providers: 7
-      share: 0.389
+      providers: 8
+      share: 0.444
       type: string
       spellings:
       - email
@@ -485,7 +496,7 @@ concepts:
       - middleName
       - MiddleName
       - middle_name
-    long_tail_count: 274
+    long_tail_count: 280
     long_tail_sample:
     - city
     - country
@@ -508,6 +519,7 @@ concepts:
     - aca_eligibility
     - accepts_enrollments_from_employer
     - accepts_enrollments_from_retail
+    - account_locked
     - accreditations
     - additional_addresses
     - additional_name
@@ -526,7 +538,6 @@ concepts:
     - availabilities
     - avatar
     - badge_cert
-    - badges_certifications
   encounter:
     segments_seen:
       encounter: 8
@@ -665,8 +676,8 @@ concepts:
     properties:
     - name: code
       tier: core
-      providers: 6
-      share: 0.6
+      providers: 7
+      share: 0.7
       type: string
       spellings:
       - type
@@ -719,7 +730,7 @@ concepts:
       type: string
       spellings:
       - status
-    long_tail_count: 93
+    long_tail_count: 96
     long_tail_sample:
     - created_at
     - effective_at
@@ -727,6 +738,7 @@ concepts:
     - reference_range
     - temperature
     - timestamp
+    - unit
     - value
     - weight
     - abnormal_status
@@ -749,6 +761,7 @@ concepts:
     - derived_from
     - device
     - diastolic
+    - display
     - dlm
     - document
     - document_date
@@ -759,8 +772,6 @@ concepts:
     - focus
     - group_code
     - has_member
-    - hc
-    - heart_rate
   condition:
     segments_seen:
       condition: 8
@@ -804,6 +815,7 @@ concepts:
       - type
       - code
       - codeSystem
+      - coding
       - codes
     - name: id
       tier: core
@@ -933,6 +945,14 @@ concepts:
       share: 0.077
       tier: long-tail
     properties:
+    - name: code
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - type
+      - Type
     - name: dosage
       tier: core
       providers: 5
@@ -953,13 +973,16 @@ concepts:
       - identifier
       - PrescriptionId
       - Id
-    - name: code
+    - name: description
       tier: extended
       providers: 4
       share: 0.444
       type: string
       spellings:
-      - type
+      - text
+      - note
+      - Comment
+      - notes
     - name: medication
       tier: extended
       providers: 4
@@ -979,15 +1002,14 @@ concepts:
       spellings:
       - status
       - Status
-    - name: description
+    - name: encounter_id
       tier: extended
       providers: 3
       share: 0.333
       type: object
       spellings:
-      - text
-      - note
-      - notes
+      - encounter
+      - Encounter
     - name: patient_id
       tier: extended
       providers: 3
@@ -996,48 +1018,48 @@ concepts:
       spellings:
       - subject
       - patientId
-    long_tail_count: 101
+    long_tail_count: 121
     long_tail_sample:
     - created_at
     - days_supply
-    - encounter_id
+    - formulary
     - frequency
     - intent
     - medication_reference
+    - name
     - practitioner_id
     - reason_code
     - based_on
     - care_plan_id
     - category
+    - clinic_id
+    - compound_ingredients
     - contained
     - course_of_therapy_type
     - create_date_time
     - current_rx_status_text
     - date_filled_utc
+    - date_inactive
     - date_written
     - dea_schedule
     - detected_issue
     - direct_transfer_token
+    - dispensable_drug_id
     - dispense_request
     - dispense_unit_id
     - do_not_perform
+    - effective_date
+    - eligibility_id
     - end_date
     - end_time
+    - error_ignored
     - event_history
     - expiration_date
     - expiration_date_utc
     - fillable
-    - formulary
+    - first_prescription_diagnosis
+    - free_text_type
     - generic_name
-    - group_identifier
-    - icd_codes
-    - implicit_rules
-    - indication
-    - instantiates_canonical
-    - instantiates_uri
-    - insurance
-    - is_daw
-    - is_refill
   coverage:
     segments_seen:
       coverage: 6

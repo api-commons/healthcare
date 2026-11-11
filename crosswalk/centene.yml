@@ -20,8 +20,8 @@ concepts:
       - id
       - identifier
       last_name: lastName
-      first_name: firstName
       npi: npi
+      first_name: firstName
       specialty:
       - specialties
       - specialty

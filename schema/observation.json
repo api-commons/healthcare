@@ -8,8 +8,8 @@
     "code": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.6,
-      "x-commons-providers": 6,
+      "x-commons-share": 0.7,
+      "x-commons-providers": 7,
       "x-commons-spellings": [
         "type",
         "code"

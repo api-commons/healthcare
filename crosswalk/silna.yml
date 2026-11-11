@@ -16,6 +16,7 @@ concepts:
       - state
       - status
       city: city
+      patient_id: patient_id
     core_coverage: 0.833
     evidence:
     - openapi/_original/silna-openapi.json#DELETE /public/v1/patients/{patient_id}
@@ -30,9 +31,9 @@ concepts:
     properties:
       id: id
       last_name: last_name
-      first_name: first_name
       npi: npi
-    core_coverage: 0.8
+      first_name: first_name
+    core_coverage: 0.667
     evidence:
     - openapi/_original/silna-openapi.json#GET /public/v1/clinicians/
     - openapi/_original/silna-openapi.json#GET /public/v1/providers/

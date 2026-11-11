@@ -11,6 +11,7 @@ concepts:
       email: email
       created_at: created_at
       name: name
+      patient_id: patient_id
     core_coverage: 0.333
     evidence:
     - openapi/_original/medblocks-platform-openapi.json#DELETE /patients/{id}

@@ -12,12 +12,12 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| patient | 38 | 29 | date_of_birth 79%, gender 76%, id 76%, first_name 66%, last_name 66%, email 62% | patients 25, patient 17 |
-| practitioner | 21 | 18 | id 78%, last_name 67%, first_name 61%, npi 61%, specialty 50% | providers 8, practitioner 7, practitioners 3, clinicians 2 |
+| patient | 38 | 29 | date_of_birth 83%, gender 79%, id 76%, first_name 69%, last_name 69%, email 66% | patients 25, patient 17 |
+| practitioner | 21 | 18 | id 78%, last_name 67%, npi 67%, first_name 61%, specialty 56%, name 50% | providers 8, practitioner 7, practitioners 3, clinicians 2 |
 | encounter | 11 | 8 | id 75%, status 62%, type 62% | encounter 8, visits 3, encounters 2 |
-| observation | 16 | 10 | code 60%, id 60%, patient_id 50% | observation 8, vitals 4, observations 2, measurements 1 |
+| observation | 16 | 10 | code 70%, id 60%, patient_id 50% | observation 8, vitals 4, observations 2, measurements 1 |
 | condition | 13 | 10 | code 60%, id 60%, status 60%, description 50%, patient_id 50% | condition 8, problems 3, diagnoses 2, conditions 1 |
-| prescription | 13 | 9 | dosage 56%, id 56% | medicationrequest 7, prescriptions 4, prescription 3, medications 1 |
+| prescription | 13 | 9 | code 56%, dosage 56%, id 56% | medicationrequest 7, prescriptions 4, prescription 3, medications 1 |
 | coverage | 9 | 8 | id 75%, code 62%, patient_id 62%, payer 62%, relationship 50%, status 50% | coverage 6, eligibility 3, eligibility_checks 1, insurances 1 |
 | health_claim | 8 | 6 | id 67%, status 67%, code 50%, patient_id 50%, payer 50%, practitioner_id 50%, service_date 50% | claims 5, explanationofbenefit 3, claim 1 |
 

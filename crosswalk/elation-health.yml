@@ -17,8 +17,8 @@ concepts:
       created_at: created_date
       middle_name: middle_name
       updated_at: last_modified
-      description: notes
       phone: phones
+      description: notes
       pronouns: pronouns
       ssn: ssn
     core_coverage: 1.0
@@ -34,11 +34,11 @@ concepts:
     properties:
       id: id
       last_name: last_name
-      first_name: first_name
       npi: npi
+      first_name: first_name
       specialty: specialty
       email: email
-    core_coverage: 1.0
+    core_coverage: 0.833
     evidence:
     - openapi/_original/elation-api-settings.json#GET /physicians/
     - openapi/_original/elation-api-settings.json#GET /physicians/{id}/

@@ -6,15 +6,29 @@ concepts:
   patient:
     path_segment:
     - patients
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      date_of_birth: birth_date
+      gender: gender
+      first_name: first_name
+      last_name: last_name
+      email: email
+      address: address
+      created_at: created_at
+      name: name
+      phone: phone
+      patient_id: member_id
+    core_coverage: 0.833
     evidence:
     - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/patients
     - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/views/patients
   practitioner:
     path_segment:
     - practitioners
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      npi: npi
+      specialty: specialty
+      name: name
+      email: email
+    core_coverage: 0.5
     evidence:
     - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/views/practitioners

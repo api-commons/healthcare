@@ -16,9 +16,9 @@ concepts:
       last_name: lastname
       email: email
       address: address
-      status: state
       created_at: createdAt
       name: name
+      status: state
       city: city
       updated_at: updatedAt
     core_coverage: 1.0
@@ -36,8 +36,8 @@ concepts:
       - _id
       - externalId
       last_name: lastname
-      first_name: firstname
       npi: npi
+      first_name: firstname
       specialty: specialty
       name: name
       email: email

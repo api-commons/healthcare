@@ -13,9 +13,9 @@ concepts:
       first_name: first_name
       last_name: last_name
       email: email
-      status: state
       created_at: created_at
       name: title
+      status: state
       city: city
       updated_at: updated_at
       description: notes
@@ -39,7 +39,7 @@ concepts:
       created_at: created_at
       updated_at: updated_at
       description: description
-    core_coverage: 0.6
+    core_coverage: 0.667
     evidence:
     - openapi/_original/cliniko-openapi.yml#GET /practitioners
     - openapi/_original/cliniko-openapi.yml#GET /practitioners/{id}

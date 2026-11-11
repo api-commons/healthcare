@@ -13,6 +13,7 @@ concepts:
       last_name: lastName
       status: status
       middle_name: middleName
+      patient_id: patientId
       ssn: ssn
     core_coverage: 0.667
     evidence:
@@ -47,6 +48,6 @@ concepts:
       - ndc
       status: status
       patient_id: patientId
-    core_coverage: 0.5
+    core_coverage: 0.333
     evidence:
     - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients/{patientId}/medications

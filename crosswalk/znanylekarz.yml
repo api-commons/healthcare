@@ -21,7 +21,7 @@ concepts:
       last_name: surname
       specialty: specialization
       name: name
-    core_coverage: 0.6
+    core_coverage: 0.667
     evidence:
     - openapi/_original/znanylekarz-integrations-api-openapi.json#GET /facilities/{facility_id}/doctors
     - openapi/_original/znanylekarz-integrations-api-openapi.json#GET /facilities/{facility_id}/doctors/{doctor_id}

@@ -27,10 +27,10 @@ concepts:
     - providers
     properties:
       last_name: lastname
-      first_name: firstname
       npi: npi
+      first_name: firstname
       specialty: specialty
-    core_coverage: 0.8
+    core_coverage: 0.667
     evidence:
     - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /providers
   encounter:

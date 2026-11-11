@@ -8,22 +8,23 @@
     "date_of_birth": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.793,
-      "x-commons-providers": 23,
+      "x-commons-share": 0.828,
+      "x-commons-providers": 24,
       "x-commons-spellings": [
         "dob",
         "date_of_birth",
         "dateOfBirth",
         "birthDate",
         "birthdate",
+        "birth_date",
         "DateOfBirth"
       ]
     },
     "gender": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.759,
-      "x-commons-providers": 22,
+      "x-commons-share": 0.793,
+      "x-commons-providers": 23,
       "x-commons-spellings": [
         "gender",
         "sex",
@@ -47,8 +48,8 @@
     "first_name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.655,
-      "x-commons-providers": 19,
+      "x-commons-share": 0.69,
+      "x-commons-providers": 20,
       "x-commons-spellings": [
         "first_name",
         "firstname",
@@ -61,8 +62,8 @@
     "last_name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.655,
-      "x-commons-providers": 19,
+      "x-commons-share": 0.69,
+      "x-commons-providers": 20,
       "x-commons-spellings": [
         "last_name",
         "lastname",
@@ -75,8 +76,8 @@
     "email": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.621,
-      "x-commons-providers": 18,
+      "x-commons-share": 0.655,
+      "x-commons-providers": 19,
       "x-commons-spellings": [
         "email",
         "emails",
@@ -88,11 +89,33 @@
     "address": {
       "type": "object",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.414,
-      "x-commons-providers": 12,
+      "x-commons-share": 0.448,
+      "x-commons-providers": 13,
       "x-commons-spellings": [
         "address",
         "addresses"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.379,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "created_date"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.379,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "name",
+        "title"
       ]
     },
     "status": {
@@ -104,28 +127,6 @@
         "state",
         "status",
         "State"
-      ]
-    },
-    "created_at": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.345,
-      "x-commons-providers": 10,
-      "x-commons-spellings": [
-        "created_at",
-        "createdAt",
-        "created_date"
-      ],
-      "format": "date-time"
-    },
-    "name": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.345,
-      "x-commons-providers": 10,
-      "x-commons-spellings": [
-        "name",
-        "title"
       ]
     },
     "city": {
@@ -162,6 +163,17 @@
       ],
       "format": "date-time"
     },
+    "phone": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.241,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "phones",
+        "phone",
+        "mobile-phone"
+      ]
+    },
     "description": {
       "type": "object",
       "x-commons-tier": "extended",
@@ -173,15 +185,16 @@
         "details"
       ]
     },
-    "phone": {
-      "type": "array",
+    "patient_id": {
+      "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.207,
       "x-commons-providers": 6,
       "x-commons-spellings": [
-        "phones",
-        "mobile-phone",
-        "phone"
+        "patient_id",
+        "member_id",
+        "PatientId",
+        "patientId"
       ]
     },
     "pronouns": {

@@ -27,8 +27,8 @@ concepts:
     properties:
       id: id
       last_name: last_name
-      first_name: first_name
       npi: npi
+      first_name: first_name
       name:
       - name
       - display_name
@@ -36,7 +36,7 @@ concepts:
       created_at: created_at
       updated_at: updated_at
       middle_name: middle_name
-    core_coverage: 0.8
+    core_coverage: 0.833
     evidence:
     - openapi/_original/nexhealth-openapi-original.json#GET /providers
     - openapi/_original/nexhealth-openapi-original.json#GET /providers/{id}

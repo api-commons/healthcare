@@ -17,8 +17,8 @@ concepts:
       - state
       - status
       city: city
-      description: details
       phone: phone
+      description: details
       ssn: ssn
     core_coverage: 0.833
     evidence:
@@ -32,8 +32,8 @@ concepts:
     - prescription
     - prescriptions
     properties:
-      medication: medication_name
       description: notes
+      medication: medication_name
     core_coverage: 0.0
     evidence:
     - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/patient/{patient_token}/prescriptions

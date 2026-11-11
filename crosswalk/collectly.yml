@@ -31,11 +31,11 @@ concepts:
     properties:
       id: id
       last_name: last_name
-      first_name: first_name
       npi: npi
+      first_name: first_name
       created_at: created_at
       updated_at: modified_at
-    core_coverage: 0.8
+    core_coverage: 0.667
     evidence:
     - openapi/_original/collectly-partners1-openapi.yml#GET /practices/{practice_id}/providers
     - openapi/_original/collectly-partners1-openapi.yml#GET /practices/{practice_id}/providers/{providers}

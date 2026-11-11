@@ -21,7 +21,7 @@ concepts:
     properties:
       id: id
       code: type
-    core_coverage: 0.2
+    core_coverage: 0.167
     evidence:
     - openapi/_original/cerner-practitioner-api-openapi.yml#GET /Practitioner
     - openapi/_original/cerner-practitioner-api-openapi.yml#GET /Practitioner/{id}
@@ -71,9 +71,9 @@ concepts:
     path_segment:
     - medicationrequest
     properties:
-      id: id
       code: type
-    core_coverage: 0.5
+      id: id
+    core_coverage: 0.667
     evidence:
     - openapi/_original/cerner-medication-request-api-openapi.yml#GET /MedicationRequest
     - openapi/_original/cerner-medication-request-api-openapi.yml#GET /MedicationRequest/{id}
