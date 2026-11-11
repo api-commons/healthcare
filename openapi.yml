@@ -1,0 +1,643 @@
+openapi: 3.1.0
+info:
+  title: Healthcare (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Healthcare interface, distilled from the harvested OpenAPI of 259 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /patients:
+    get:
+      operationId: listPatients
+      summary: List patients
+      tags:
+      - Patients
+      x-commons-tier: core
+      x-commons-share: 0.895
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Patient'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPatient
+      summary: Create a patient
+      tags:
+      - Patients
+      x-commons-tier: core
+      x-commons-share: 0.632
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /patients/{patient_id}:
+    parameters:
+    - $ref: '#/components/parameters/patient_id'
+    get:
+      operationId: getPatient
+      summary: Get a patient
+      tags:
+      - Patients
+      x-commons-tier: core
+      x-commons-share: 0.763
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updatePatient
+      summary: Update a patient
+      tags:
+      - Patients
+      x-commons-tier: extended
+      x-commons-share: 0.474
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deletePatient
+      summary: Delete a patient
+      tags:
+      - Patients
+      x-commons-tier: extended
+      x-commons-share: 0.237
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /practitioners:
+    get:
+      operationId: listPractitioners
+      summary: List practitioners
+      tags:
+      - Practitioners
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Practitioner'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPractitioner
+      summary: Create a practitioner
+      tags:
+      - Practitioners
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /practitioners/{practitioner_id}:
+    parameters:
+    - $ref: '#/components/parameters/practitioner_id'
+    get:
+      operationId: getPractitioner
+      summary: Get a practitioner
+      tags:
+      - Practitioners
+      x-commons-tier: core
+      x-commons-share: 0.762
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updatePractitioner
+      summary: Update a practitioner
+      tags:
+      - Practitioners
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /encounters:
+    get:
+      operationId: listEncounters
+      summary: List encounters
+      tags:
+      - Encounters
+      x-commons-tier: core
+      x-commons-share: 0.909
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Encounter'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createEncounter
+      summary: Create an encounter
+      tags:
+      - Encounters
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /encounters/{encounter_id}:
+    parameters:
+    - $ref: '#/components/parameters/encounter_id'
+    get:
+      operationId: getEncounter
+      summary: Get an encounter
+      tags:
+      - Encounters
+      x-commons-tier: core
+      x-commons-share: 0.727
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateEncounter
+      summary: Update an encounter
+      tags:
+      - Encounters
+      x-commons-tier: extended
+      x-commons-share: 0.273
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /observations:
+    get:
+      operationId: listObservations
+      summary: List observations
+      tags:
+      - Observations
+      x-commons-tier: core
+      x-commons-share: 0.938
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Observation'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createObservation
+      summary: Create an observation
+      tags:
+      - Observations
+      x-commons-tier: extended
+      x-commons-share: 0.438
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /observations/{observation_id}:
+    parameters:
+    - $ref: '#/components/parameters/observation_id'
+    get:
+      operationId: getObservation
+      summary: Get an observation
+      tags:
+      - Observations
+      x-commons-tier: core
+      x-commons-share: 0.562
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateObservation
+      summary: Update an observation
+      tags:
+      - Observations
+      x-commons-tier: extended
+      x-commons-share: 0.312
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /conditions:
+    get:
+      operationId: listConditions
+      summary: List conditions
+      tags:
+      - Conditions
+      x-commons-tier: core
+      x-commons-share: 0.923
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id005
+                  $ref: '#/components/schemas/Condition'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createCondition
+      summary: Create a condition
+      tags:
+      - Conditions
+      x-commons-tier: extended
+      x-commons-share: 0.308
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /conditions/{condition_id}:
+    parameters:
+    - $ref: '#/components/parameters/condition_id'
+    get:
+      operationId: getCondition
+      summary: Get a condition
+      tags:
+      - Conditions
+      x-commons-tier: core
+      x-commons-share: 0.615
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+    patch:
+      operationId: updateCondition
+      summary: Update a condition
+      tags:
+      - Conditions
+      x-commons-tier: extended
+      x-commons-share: 0.308
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /prescriptions:
+    get:
+      operationId: listPrescriptions
+      summary: List prescriptions
+      tags:
+      - Prescriptions
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id006
+                  $ref: '#/components/schemas/Prescription'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPrescription
+      summary: Create a prescription
+      tags:
+      - Prescriptions
+      x-commons-tier: extended
+      x-commons-share: 0.308
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+  /prescriptions/{prescription_id}:
+    parameters:
+    - $ref: '#/components/parameters/prescription_id'
+    get:
+      operationId: getPrescription
+      summary: Get a prescription
+      tags:
+      - Prescriptions
+      x-commons-tier: core
+      x-commons-share: 0.538
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+  /coverages:
+    get:
+      operationId: listCoverages
+      summary: List coverages
+      tags:
+      - Coverages
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id007
+                  $ref: '#/components/schemas/Coverage'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createCoverage
+      summary: Create a coverage
+      tags:
+      - Coverages
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id007
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id007
+  /coverages/{coverage_id}:
+    parameters:
+    - $ref: '#/components/parameters/coverage_id'
+    get:
+      operationId: getCoverage
+      summary: Get a coverage
+      tags:
+      - Coverages
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id007
+  /health-claims:
+    get:
+      operationId: listHealthClaims
+      summary: List health claims
+      tags:
+      - Health Claims
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id008
+                  $ref: '#/components/schemas/HealthClaim'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /health-claims/{health_claim_id}:
+    parameters:
+    - $ref: '#/components/parameters/health_claim_id'
+    get:
+      operationId: getHealthClaim
+      summary: Get a health claim
+      tags:
+      - Health Claims
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id008
+components:
+  schemas:
+    Patient:
+      $ref: ./schema/patient.json
+    Practitioner:
+      $ref: ./schema/practitioner.json
+    Encounter:
+      $ref: ./schema/encounter.json
+    Observation:
+      $ref: ./schema/observation.json
+    Condition:
+      $ref: ./schema/condition.json
+    Prescription:
+      $ref: ./schema/prescription.json
+    Coverage:
+      $ref: ./schema/coverage.json
+    HealthClaim:
+      $ref: ./schema/health_claim.json
+  parameters:
+    patient_id:
+      name: patient_id
+      in: path
+      required: true
+      schema:
+        type: string
+    practitioner_id:
+      name: practitioner_id
+      in: path
+      required: true
+      schema:
+        type: string
+    encounter_id:
+      name: encounter_id
+      in: path
+      required: true
+      schema:
+        type: string
+    observation_id:
+      name: observation_id
+      in: path
+      required: true
+      schema:
+        type: string
+    condition_id:
+      name: condition_id
+      in: path
+      required: true
+      schema:
+        type: string
+    prescription_id:
+      name: prescription_id
+      in: path
+      required: true
+      schema:
+        type: string
+    coverage_id:
+      name: coverage_id
+      in: path
+      required: true
+      schema:
+        type: string
+    health_claim_id:
+      name: health_claim_id
+      in: path
+      required: true
+      schema:
+        type: string

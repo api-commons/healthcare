@@ -1,0 +1,46 @@
+provider: ritten
+apis_io: https://apis.io/providers/ritten/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: dob
+      id:
+      - id
+      - externalId
+      email: emails
+      address: addresses
+      created_at: createdAt
+      name: name
+      phone: phones
+      ssn: ssn
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/ritten-external-api-openapi-original.yaml#GET /patients
+    - openapi/_original/ritten-external-api-openapi-original.yaml#GET /patients/{id}
+    - openapi/_original/ritten-external-api-openapi-original.yaml#PATCH /patients/{id}
+    - openapi/_original/ritten-external-api-openapi-original.yaml#POST /patients
+    - openapi/_original/ritten-external-api-openapi.yaml#GET /patients
+  encounter:
+    path_segment:
+    - encounters
+    properties:
+      id: id
+      status: status
+      patient_id: patientId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/ritten-external-api-openapi-original.yaml#POST /encounters
+    - openapi/_original/ritten-external-api-openapi.yaml#POST /encounters
+  observation:
+    path_segment:
+    - vitals
+    properties:
+      code: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/ritten-external-api-openapi-original.yaml#POST /patients/{id}/vitals
+    - openapi/_original/ritten-external-api-openapi.yaml#POST /patients/{id}/vitals

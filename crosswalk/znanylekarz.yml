@@ -1,0 +1,29 @@
+provider: znanylekarz
+apis_io: https://apis.io/providers/znanylekarz/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/znanylekarz-integrations-api-openapi.json#DELETE /facilities/{facility_id}/doctors/{doctor_id}/addresses/{address_id}/bookings/{booking_id}/presence/patient
+    - openapi/_original/znanylekarz-integrations-api-openapi.json#POST /facilities/{facility_id}/doctors/{doctor_id}/addresses/{address_id}/bookings/{booking_id}/presence/patient
+    - openapi/_original/znanylekarz-integrations-api.yml#DELETE /facilities/{facility_id}/doctors/{doctor_id}/addresses/{address_id}/bookings/{booking_id}/presence/patient
+    - openapi/_original/znanylekarz-integrations-api.yml#POST /facilities/{facility_id}/doctors/{doctor_id}/addresses/{address_id}/bookings/{booking_id}/presence/patient
+  practitioner:
+    path_segment:
+    - doctors
+    properties:
+      id: id
+      last_name: surname
+      specialty: specialization
+      name: name
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/znanylekarz-integrations-api-openapi.json#GET /facilities/{facility_id}/doctors
+    - openapi/_original/znanylekarz-integrations-api-openapi.json#GET /facilities/{facility_id}/doctors/{doctor_id}
+    - openapi/_original/znanylekarz-integrations-api.yml#GET /facilities/{facility_id}/doctors
+    - openapi/_original/znanylekarz-integrations-api.yml#GET /facilities/{facility_id}/doctors/{doctor_id}

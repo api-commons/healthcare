@@ -1,0 +1,21 @@
+provider: nhs-england
+apis_io: https://apis.io/providers/nhs-england/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nhs-app-api.yaml#GET /communication/report/patients
+    - openapi/_original/nhs-app-openapi.yaml#GET /communication/report/patients
+  practitioner:
+    path_segment:
+    - practitioner
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/e-referrals-service-api.yaml#GET /R4/Practitioner
+    - openapi/_original/nhs-e-referral-service-openapi.yaml#GET /R4/Practitioner

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/healthcare/main/schema/practitioner.json",
+  "title": "Practitioner",
+  "description": "The common practitioner in Healthcare, distilled from 18 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.778,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "id",
+        "identifier",
+        "Id",
+        "_id",
+        "externalId"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "last_name",
+        "lastName",
+        "lastname",
+        "LastName",
+        "surname"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.611,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "first_name",
+        "firstName",
+        "firstname",
+        "FirstName"
+      ]
+    },
+    "npi": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.611,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "npi",
+        "npiNumber",
+        "NPINumber",
+        "npi_number"
+      ]
+    },
+    "specialty": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "specialty",
+        "qualification",
+        "specialties",
+        "specialization"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "label",
+        "display_name"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.389,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "email",
+        "Email"
+      ],
+      "format": "email"
+    },
+    "active": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "active",
+        "Active"
+      ]
+    },
+    "code": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.278,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "modified_at",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "address": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "address"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "text",
+        "description"
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "gender"
+      ]
+    },
+    "middle_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "middleName",
+        "MiddleName",
+        "middle_name"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "healthcare",
+    "concept": "practitioner",
+    "providers": 18,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

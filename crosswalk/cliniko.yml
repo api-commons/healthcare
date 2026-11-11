@@ -1,0 +1,45 @@
+provider: cliniko
+apis_io: https://apis.io/providers/cliniko/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: date_of_birth
+      gender: gender
+      id: id
+      first_name: first_name
+      last_name: last_name
+      email: email
+      status: state
+      created_at: created_at
+      name: title
+      city: city
+      updated_at: updated_at
+      description: notes
+      pronouns: pronouns
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cliniko-openapi.yml#GET /patients
+    - openapi/_original/cliniko-openapi.yml#GET /patients/{id}
+    - openapi/_original/cliniko-openapi.yml#PATCH /patients/{id}
+    - openapi/_original/cliniko-openapi.yml#POST /patients
+  practitioner:
+    path_segment:
+    - practitioners
+    properties:
+      id: id
+      last_name: last_name
+      first_name: first_name
+      name:
+      - title
+      - label
+      created_at: created_at
+      updated_at: updated_at
+      description: description
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/cliniko-openapi.yml#GET /practitioners
+    - openapi/_original/cliniko-openapi.yml#GET /practitioners/{id}

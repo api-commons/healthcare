@@ -1,0 +1,36 @@
+provider: opendental
+apis_io: https://apis.io/providers/opendental/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/opendental-openapi.yml#GET /patients
+    - openapi/_original/opendental-openapi.yml#GET /patients/{PatNum}
+    - openapi/_original/opendental-openapi.yml#POST /patients
+    - openapi/_original/opendental-openapi.yml#PUT /patients/{PatNum}
+  practitioner:
+    path_segment:
+    - providers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/opendental-openapi.yml#GET /providers
+    - openapi/_original/opendental-openapi.yml#GET /providers/{ProvNum}
+    - openapi/_original/opendental-openapi.yml#POST /providers
+    - openapi/_original/opendental-openapi.yml#PUT /providers/{ProvNum}
+  health_claim:
+    path_segment:
+    - claims
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/opendental-openapi.yml#DELETE /claims/{ClaimNum}
+    - openapi/_original/opendental-openapi.yml#GET /claims
+    - openapi/_original/opendental-openapi.yml#GET /claims/{ClaimNum}
+    - openapi/_original/opendental-openapi.yml#POST /claims
+    - openapi/_original/opendental-openapi.yml#PUT /claims/{ClaimNum}

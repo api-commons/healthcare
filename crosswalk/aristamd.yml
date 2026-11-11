@@ -1,0 +1,23 @@
+provider: aristamd
+apis_io: https://apis.io/providers/aristamd/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: date_of_birth
+      gender: gender
+      id: id
+      first_name: first_name
+      last_name: last_name
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/aristamd-openapi-original.json#GET /intergy/patients/{id}
+    - openapi/_original/aristamd-openapi-original.json#GET /patients
+    - openapi/_original/aristamd-openapi-original.json#GET /patients/{patientId}
+    - openapi/_original/aristamd-openapi-original.json#PATCH /patients/{patientId}
+    - openapi/_original/aristamd-openapi-original.json#POST /patients

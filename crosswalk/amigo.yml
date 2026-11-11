@@ -1,0 +1,20 @@
+provider: amigo
+apis_io: https://apis.io/providers/amigo/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/patients
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/views/patients
+  practitioner:
+    path_segment:
+    - practitioners
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/fhir/views/practitioners

@@ -1,0 +1,38 @@
+provider: huma
+apis_io: https://apis.io/providers/huma/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    - patients
+    properties:
+      date_of_birth:
+      - dob
+      - dateOfBirth
+      gender: sex
+      id: id
+      first_name:
+      - firstname
+      - givenName
+      last_name:
+      - lastname
+      - familyName
+      email: email
+      description: details
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/huma-platform-openapi-original.yml#POST /api/extensions/v1/kardia/patient/{user_id}
+    - openapi/_original/huma-platform-openapi-original.yml#POST /api/extensions/v2/user/patients
+  prescription:
+    path_segment:
+    - prescription
+    - prescriptions
+    properties:
+      dosage: dosage
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/huma-platform-openapi-original.yml#GET /api/care-plan/v1/user/{user_id}/prescriptions
+    - openapi/_original/huma-platform-openapi-original.yml#POST /api/care-plan/v1/user/{user_id}/prescription

@@ -1,0 +1,13 @@
+provider: athelas
+apis_io: https://apis.io/providers/athelas/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/athelas-enterprise-openapi.yml#GET /patients/{id}
+    - openapi/_original/athelas-enterprise-openapi.yml#GET /sites/{id}/patients

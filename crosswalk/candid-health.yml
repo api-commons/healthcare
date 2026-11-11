@@ -1,0 +1,28 @@
+provider: candid-health
+apis_io: https://apis.io/providers/candid-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/candid-health-openapi.yml#GET /lists/v1/patient
+  practitioner:
+    path_segment:
+    - providers
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/candid-health-openapi.yml#DELETE /api/contracts/v3/{contract_id}/providers
+    - openapi/_original/candid-health-openapi.yml#GET /api/contracts/v3/{contract_id}/providers
+    - openapi/_original/candid-health-openapi.yml#POST /api/contracts/v3/{contract_id}/providers
+  encounter:
+    path_segment:
+    - visits
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/candid-health-openapi.yml#GET /appointments/v1/visits

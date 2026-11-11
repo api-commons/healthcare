@@ -1,0 +1,94 @@
+provider: drchrono
+apis_io: https://apis.io/providers/drchrono/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: date_of_birth
+      gender: gender
+      id: id
+      first_name: first_name
+      last_name: last_name
+      email: email
+      address: address
+      status: state
+      created_at: created_at
+      city: city
+      middle_name: middle_name
+      updated_at: updated_at
+      pronouns: pronouns
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#DELETE /api/patients/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/patients
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/patients/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#PATCH /api/patients/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#POST /api/patients
+  practitioner:
+    path_segment:
+    - doctors
+    properties:
+      id: id
+      last_name: last_name
+      first_name: first_name
+      npi: npi_number
+      specialty: specialty
+      email: email
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/doctors
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/doctors/{id}
+    - openapi/_original/drchrono-rest-api-openapi.yml#GET /api/doctors
+    - openapi/_original/drchrono-rest-api-openapi.yml#GET /api/doctors/{id}
+  observation:
+    path_segment:
+    - lab_results
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#DELETE /api/lab_results/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/lab_results
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/lab_results/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#PATCH /api/lab_results/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#POST /api/lab_results
+  condition:
+    path_segment:
+    - problems
+    properties:
+      id: id
+      status:
+      - verification_status
+      - status
+      description:
+      - description
+      - notes
+      patient_id: patient
+      category: category
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/problems
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/problems/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#PATCH /api/problems/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#POST /api/problems
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#PUT /api/problems/{id}
+  coverage:
+    path_segment:
+    - eligibility_checks
+    - insurances
+    properties:
+      id: id
+      patient_id: patient
+      payer: payer_id
+      status: state
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/eligibility_checks
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/eligibility_checks/{id}
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/insurances
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/insurances/{id}
+    - openapi/_original/drchrono-rest-api-openapi.yml#GET /api/eligibility_checks

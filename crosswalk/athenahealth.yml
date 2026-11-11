@@ -1,0 +1,76 @@
+provider: athenahealth
+apis_io: https://apis.io/providers/athenahealth/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    - patient
+    properties:
+      date_of_birth: dob
+      gender: sex
+      first_name: firstname
+      last_name: lastname
+      email: email
+      status: state
+      city: city
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /patients
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /patients/{patientid}
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#POST /patients
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#PUT /patients/{patientid}
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /Patient
+  practitioner:
+    path_segment:
+    - providers
+    properties:
+      last_name: lastname
+      first_name: firstname
+      npi: npi
+      specialty: specialty
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /providers
+  encounter:
+    path_segment:
+    - encounter
+    - encounters
+    properties:
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /chart/encounter/{encounterid}
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /chart/{patientid}/encounters
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /Encounter
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /Encounter/{id}
+  observation:
+    path_segment:
+    - observation
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /Observation
+  condition:
+    path_segment:
+    - condition
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /Condition
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/athenahealth-fhir-r4-api-openapi.yml#GET /MedicationRequest
+  health_claim:
+    path_segment:
+    - claims
+    properties:
+      status: status
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/athenahealth-athenaone-rest-api-openapi.yml#GET /claims

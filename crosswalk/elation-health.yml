@@ -1,0 +1,89 @@
+provider: elation-health
+apis_io: https://apis.io/providers/elation-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: dob
+      gender: sex
+      id: id
+      first_name: first_name
+      last_name: last_name
+      email: emails
+      address: address
+      created_at: created_date
+      middle_name: middle_name
+      updated_at: last_modified
+      description: notes
+      phone: phones
+      pronouns: pronouns
+      ssn: ssn
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elation-api-settings.json#DELETE /patients/{id}/
+    - openapi/_original/elation-api-settings.json#GET /patients/
+    - openapi/_original/elation-api-settings.json#GET /patients/{id}
+    - openapi/_original/elation-api-settings.json#PATCH /patients/{id}/
+    - openapi/_original/elation-api-settings.json#POST /patients/
+  practitioner:
+    path_segment:
+    - physicians
+    properties:
+      id: id
+      last_name: last_name
+      first_name: first_name
+      npi: npi
+      specialty: specialty
+      email: email
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elation-api-settings.json#GET /physicians/
+    - openapi/_original/elation-api-settings.json#GET /physicians/{id}/
+    - openapi/_original/elation-api-settings.json#PATCH /physicians/{id}/
+    - openapi/_original/elation-api-settings.json#PUT /physicians/{id}/
+    - openapi/_original/elation-health-api-full-openapi.yaml#GET /api/2.0/physicians/
+  observation:
+    path_segment:
+    - vitals
+    properties:
+      id: id
+      patient_id: patient
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/elation-api-settings.json#GET /vitals/
+    - openapi/_original/elation-api-settings.json#GET /vitals/{id}/
+    - openapi/_original/elation-api-settings.json#POST /vitals/
+    - openapi/_original/elation-health-api-full-openapi.yaml#GET /api/2.0/vitals/
+    - openapi/_original/elation-health-api-full-openapi.yaml#GET /api/2.0/vitals/{id}/
+  condition:
+    path_segment:
+    - problems
+    properties:
+      id: id
+      status:
+      - status
+      - verification_status
+      description: description
+      patient_id: patient
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/elation-api-settings.json#DELETE /problems/{id}/
+    - openapi/_original/elation-api-settings.json#GET /problems/
+    - openapi/_original/elation-api-settings.json#GET /problems/{id}/
+    - openapi/_original/elation-api-settings.json#PATCH /problems/{id}/
+    - openapi/_original/elation-api-settings.json#POST /problems/
+  coverage:
+    path_segment:
+    - eligibility
+    properties:
+      patient_id: patient_id
+    core_coverage: 0.167
+    evidence:
+    - openapi/_original/elation-api-settings.json#GET /patient_insurances/{id}/eligibility/
+    - openapi/_original/elation-api-settings.json#POST /patient_insurances/{id}/eligibility/
+    - openapi/_original/elation-health-api-full-openapi.yaml#GET /api/2.0/patient_insurances/{id}/eligibility/
+    - openapi/_original/elation-health-api-full-openapi.yaml#POST /api/2.0/patient_insurances/{id}/eligibility/
+    - openapi/_original/elation-premium-patient-insurance-api.json#GET /api/2.0/patient_insurances/{id}/eligibility/

@@ -1,0 +1,78 @@
+provider: cms-gov
+apis_io: https://apis.io/providers/cms-gov/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth: birthDate
+      gender: gender
+      id:
+      - id
+      - identifier
+      address: address
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cms-gov-bfd-openapi.yml#GET /Patient
+    - openapi/_original/cms-gov-bfd-openapi.yml#GET /Patient/{id}
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /Patient
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /Patient/{id}
+    - openapi/_original/cms-gov-dpc-openapi.yml#GET /Patient
+  practitioner:
+    path_segment:
+    - practitioner
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cms-gov-dpc-openapi.yml#DELETE /Practitioner/{id}
+    - openapi/_original/cms-gov-dpc-openapi.yml#GET /Practitioner
+    - openapi/_original/cms-gov-dpc-openapi.yml#GET /Practitioner/{id}
+    - openapi/_original/cms-gov-dpc-openapi.yml#POST /Practitioner
+  observation:
+    path_segment:
+    - measurements
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cms-gov-qpp-openapi.yml#GET /measurements
+    - openapi/_original/cms-gov-qpp-openapi.yml#POST /measurements
+  coverage:
+    path_segment:
+    - coverage
+    - eligibility
+    properties:
+      id: id
+      code: type
+      patient_id: beneficiary
+      payer: payor
+      relationship: relationship
+      status: status
+      period: period
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cms-coverage-api-openapi.yml#GET /Coverage
+    - openapi/_original/cms-coverage-api-openapi.yml#GET /Coverage/{id}
+    - openapi/_original/cms-gov-bfd-openapi.yml#GET /Coverage
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /Coverage
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /Coverage/{id}
+  health_claim:
+    path_segment:
+    - explanationofbenefit
+    properties:
+      id: id
+      status: status
+      code: type
+      patient_id: patient
+      payer: insurer
+      practitioner_id: provider
+      service_date: billablePeriod
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cms-explanationofbenefit-api-openapi.yml#GET /ExplanationOfBenefit
+    - openapi/_original/cms-explanationofbenefit-api-openapi.yml#GET /ExplanationOfBenefit/{id}
+    - openapi/_original/cms-gov-bfd-openapi.yml#GET /ExplanationOfBenefit
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /ExplanationOfBenefit
+    - openapi/_original/cms-gov-blue-button-2-openapi.yml#GET /ExplanationOfBenefit/{id}

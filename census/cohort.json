@@ -1,0 +1,2400 @@
+[
+ {
+  "slug": "abcuro",
+  "specs": [
+   "openapi/_original/abcuro-wp-json-routes.json"
+  ]
+ },
+ {
+  "slug": "accredify0604",
+  "specs": [
+   "openapi/_original/accredify0604-dashboard-v1-openapi.yaml",
+   "openapi/_original/accredify0604-dashboard-v2-openapi.yaml",
+   "openapi/_original/accredify0604-nexus-auth-openapi.yaml",
+   "openapi/_original/accredify0604-nexus-verification-openapi.yaml",
+   "openapi/_original/accredify0604-nexus-workflow-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "actava",
+  "specs": [
+   "openapi/_original/actava-openapi.json"
+  ]
+ },
+ {
+  "slug": "advancedmd",
+  "specs": [
+   "openapi/_original/advancedmd-application-access-apis-swagger.json",
+   "openapi/_original/advancedmd-fhir-bulk-api-openapi.json",
+   "openapi/_original/advancedmd-fhir-single-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "aerin-medical",
+  "specs": [
+   "openapi/_original/aerin-medical-site-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aetna",
+  "specs": [
+   "openapi/_original/aetna-patient-access-api-sandbox-openapi.yml",
+   "openapi/_original/aetna-v1-providerdirectory-InsurancePlan-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Location-id-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Location-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Organization-id-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Organization-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-OrganizationAffiliation-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Practitioner-id-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-Practitioner-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectory-PractitionerRole-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-HealthcareService-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-InsurancePlan-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-Location-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-Organization-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-OrganizationAffiliation-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-Practitioner-swagger.yml",
+   "openapi/_original/aetna-v1-providerdirectorydata-PractitionerRole-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-AllergyIntolerance-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-AllergyIntolerance-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-AllergyIntolerance-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-AllergyIntolerance-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Binary-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Binary-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CarePlan-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CarePlan-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CarePlan-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CarePlan-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CareTeam-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CareTeam-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CareTeam-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-CareTeam-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Condition-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Condition-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Condition-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Condition-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Coverage-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Coverage-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Coverage-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Device-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Device-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Device-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Device-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DiagnosticReport-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DiagnosticReport-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DiagnosticReport-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DiagnosticReport-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DocumentReference-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DocumentReference-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DocumentReference-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-DocumentReference-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Encounter-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Encounter-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Encounter-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Encounter-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Endpoint-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Endpoint-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Goal-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Goal-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Goal-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Goal-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Immunization-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Immunization-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Immunization-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Immunization-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Location-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Medication-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Medication-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationDispense-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationKnowledge-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationKnowledge-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationRequest-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationRequest-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationRequest-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-MedicationRequest-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Observation-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Observation-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Observation-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Observation-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Organization-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Organization-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Patient-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Patient-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Patient-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Patient-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Practitioner-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Practitioner-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-PractitionerRole-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-PractitionerRole-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Procedure-id-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Procedure-id-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Procedure-sandbox-swagger.yml",
+   "openapi/_original/aetna-v2-patientaccess-Procedure-swagger.yml"
+  ]
+ },
+ {
+  "slug": "affinda",
+  "specs": [
+   "openapi/_original/affinda-document-splitters-api-openapi.yml",
+   "openapi/_original/affinda-extractors-api-openapi.yml",
+   "openapi/_original/affinda-invitations-api-openapi.yml",
+   "openapi/_original/affinda-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aignostics",
+  "specs": [
+   "openapi/_original/aignostics-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "akute",
+  "specs": [
+   "openapi/_original/akute-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alayacare",
+  "specs": [
+   "openapi/_original/alayacare-accounting-openapi.yml",
+   "openapi/_original/alayacare-careplan-openapi.yml",
+   "openapi/_original/alayacare-client-openapi.yml",
+   "openapi/_original/alayacare-clinical-openapi.yml",
+   "openapi/_original/alayacare-employee-openapi.yml",
+   "openapi/_original/alayacare-employee-skills-openapi.yml",
+   "openapi/_original/alayacare-employee-unavailability-openapi.yml",
+   "openapi/_original/alayacare-files-openapi.yml",
+   "openapi/_original/alayacare-forms-openapi.yml",
+   "openapi/_original/alayacare-market-openapi.yml",
+   "openapi/_original/alayacare-medication-openapi.yml",
+   "openapi/_original/alayacare-scheduler-openapi.yml",
+   "openapi/_original/alayacare-services-openapi.yml",
+   "openapi/_original/alayacare-tasks-openapi.yml",
+   "openapi/_original/alayacare-tasks-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alleva",
+  "specs": [
+   "openapi/_original/alleva-openapi.json",
+   "openapi/_original/alleva-rest-api-openapi.yml",
+   "openapi/_original/alleva-rest-api-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "alzheon",
+  "specs": [
+   "openapi/_original/alzheon-content-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-b2b-data-interchange",
+  "specs": [
+   "openapi/_original/aws-b2b-data-interchange-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-healthimaging",
+  "specs": [
+   "openapi/_original/amazon-healthimaging-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-healthlake",
+  "specs": [
+   "openapi/_original/amazon-healthlake-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-healthomics",
+  "specs": [
+   "openapi/_original/amazon-healthomics-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "ambra-health",
+  "specs": [
+   "openapi/_original/ambra-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amerihealth-caritas",
+  "specs": [
+   "openapi/_original/amerihealth-caritas-patient-access-openapi.yml",
+   "openapi/_original/amerihealth-caritas-provider-directory-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amigo",
+  "specs": [
+   "openapi/_original/amigo-classic-openapi-original.json",
+   "openapi/_original/amigo-platform-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "andel",
+  "specs": [
+   "openapi/_original/andel-data-exchange-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "aristamd",
+  "specs": [
+   "openapi/_original/aristamd-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "athelas",
+  "specs": [
+   "openapi/_original/athelas-enterprise-openapi.yml"
+  ]
+ },
+ {
+  "slug": "athenahealth",
+  "specs": [
+   "openapi/_original/athenahealth-athenaone-rest-api-openapi.yml",
+   "openapi/_original/athenahealth-cds-hooks-api-openapi.yml",
+   "openapi/_original/athenahealth-fhir-bulk-data-api-openapi.yml",
+   "openapi/_original/athenahealth-fhir-r4-api-openapi.yml",
+   "openapi/_original/athenahealth-fhir-subscriptions-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "august-health",
+  "specs": [
+   "openapi/_original/august-health-integrations-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "authenticx",
+  "specs": [
+   "openapi/_original/authenticx-openapi.json"
+  ]
+ },
+ {
+  "slug": "autoderm-ai-dermatology-api",
+  "specs": [
+   "openapi/_original/autoderm-ai-dermatology-api-openapi.json",
+   "openapi/_original/autoderm-ai-dermatology-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "autonomous-solutions",
+  "specs": [
+   "openapi/_original/autonomous-solutions-openapi.json"
+  ]
+ },
+ {
+  "slug": "availity",
+  "specs": [
+   "openapi/_original/availity-care-cost-estimator-institutional-openapi.json",
+   "openapi/_original/availity-care-cost-estimator-institutional-openapi.yml",
+   "openapi/_original/availity-care-cost-estimator-professional-openapi.json",
+   "openapi/_original/availity-care-cost-estimator-professional-openapi.yml",
+   "openapi/_original/availity-claim-attachments-openapi.yml",
+   "openapi/_original/availity-claim-status-openapi.yml",
+   "openapi/_original/availity-claim-statuses-openapi.json",
+   "openapi/_original/availity-configurations-openapi.json",
+   "openapi/_original/availity-configurations-openapi.yml",
+   "openapi/_original/availity-coverages-openapi.json",
+   "openapi/_original/availity-coverages-openapi.yml",
+   "openapi/_original/availity-dental-claims-openapi.json",
+   "openapi/_original/availity-dental-claims-openapi.yml",
+   "openapi/_original/availity-dfs-openapi.json",
+   "openapi/_original/availity-dfs-openapi.yml",
+   "openapi/_original/availity-eligibility-openapi.yml",
+   "openapi/_original/availity-openapi.json",
+   "openapi/_original/availity-patient-cost-estimator-professional-openapi.json",
+   "openapi/_original/availity-patient-cost-estimator-professional-openapi.yml",
+   "openapi/_original/availity-payer-list-openapi.json",
+   "openapi/_original/availity-payer-list-openapi.yml",
+   "openapi/_original/availity-service-reviews-openapi.json",
+   "openapi/_original/availity-service-reviews-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aws-healthlake",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "axuall",
+  "specs": [
+   "openapi/_original/axuall-openapi.json"
+  ]
+ },
+ {
+  "slug": "azumio",
+  "specs": [
+   "openapi/_original/azumio-openapi.json"
+  ]
+ },
+ {
+  "slug": "azure-health",
+  "specs": [
+   "openapi/_original/health-data-ai-deid-2024-11-15.json",
+   "openapi/_original/healthcare-apis-2024-03-31.json"
+  ]
+ },
+ {
+  "slug": "b-well",
+  "specs": [
+   "openapi/_original/b-well-client-webhook-api-openapi.json",
+   "openapi/_original/b-well-user-data-operations-openapi.json"
+  ]
+ },
+ {
+  "slug": "best-practice",
+  "specs": [
+   "openapi/_original/haloconnect-desktop-openapi.json",
+   "openapi/_original/haloconnect-integrator-openapi.json"
+  ]
+ },
+ {
+  "slug": "biogen",
+  "specs": [
+   "openapi/_original/biogen-cdp-export-api-iodoc.json"
+  ]
+ },
+ {
+  "slug": "bodytrace",
+  "specs": [
+   "openapi/_original/bodytrace-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brellium",
+  "specs": [
+   "openapi/_original/brellium-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "buoy-health",
+  "specs": [
+   "openapi/_original/buoy-health-openapi.json",
+   "openapi/_original/buoy-health-symptom-checker-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cadasto",
+  "specs": [
+   "openapi/_original/cadasto-admin-api-openapi.json",
+   "openapi/_original/cadasto-definition-api-openapi.json",
+   "openapi/_original/cadasto-demographic-api-openapi.json",
+   "openapi/_original/cadasto-ehr-api-openapi.json",
+   "openapi/_original/cadasto-extra-api-openapi.json",
+   "openapi/_original/cadasto-query-api-openapi.json",
+   "openapi/_original/cadasto-smart-on-openehr-openapi.json",
+   "openapi/_original/cadasto-system-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "cambio-healthcare-systems",
+  "specs": [
+   "openapi/_original/cambio-healthcare-systems-attention-signal-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-attention-signal-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-authorizer-openid-connect-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-authorizer-openid-connect-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-booked-appointments-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-booked-appointments-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-care-contacts-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-care-contacts-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-care-contacts-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-care-contacts-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-chemistry-lab-results-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-chemistry-lab-results-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-chemistry-lab-results-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-chemistry-lab-results-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-diagnosis-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-diagnosis-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-diagnosis-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-diagnosis-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-fhir-r4-public-profiles-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-fhir-r4-public-profiles-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-journal-notes-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-journal-notes-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-journal-notes-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-journal-notes-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-medication-prescriptions-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-medication-prescriptions-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-medication-prescriptions-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-medication-prescriptions-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-patient-information-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-patient-information-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-patient-information-v2-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-patient-information-v2-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-payment-notice-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-payment-notice-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-referral-requests-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-referral-requests-openapi_2.json",
+   "openapi/_original/cambio-healthcare-systems-video-meetings-openapi.json",
+   "openapi/_original/cambio-healthcare-systems-video-meetings-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "canada-health-infoway",
+  "specs": [
+   "openapi/_original/infoway-fhir-terminology-service-api-openapi.json",
+   "openapi/_original/infoway-terminology-service-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "cancer-gov",
+  "specs": [
+   "openapi/_original/cancer-gov-best-bets-openapi.json",
+   "openapi/_original/cancer-gov-best-bets-openapi.yml",
+   "openapi/_original/cancer-gov-drug-dictionary-openapi.json",
+   "openapi/_original/cancer-gov-drug-dictionary-openapi.yml",
+   "openapi/_original/cancer-gov-evs-openapi.json",
+   "openapi/_original/cancer-gov-evs-openapi.yml",
+   "openapi/_original/cancer-gov-glossary-openapi.json",
+   "openapi/_original/cancer-gov-glossary-openapi.yml",
+   "openapi/_original/cancer-gov-modac-openapi.json",
+   "openapi/_original/cancer-gov-modac-openapi.yml",
+   "openapi/_original/cancer-gov-r4r-openapi.json",
+   "openapi/_original/cancer-gov-r4r-openapi.yml",
+   "openapi/_original/cancer-gov-seer-openapi.json",
+   "openapi/_original/cancer-gov-seer-openapi.yml",
+   "openapi/_original/cancer-gov-sitewide-search-openapi.json",
+   "openapi/_original/cancer-gov-sitewide-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "candid-health",
+  "specs": [
+   "openapi/_original/candid-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "canvas-medical",
+  "specs": [
+   "openapi/_original/canvas-medical-fhir-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "careacademy",
+  "specs": [
+   "openapi/_original/careacademy-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "caris-life-sciences",
+  "specs": [
+   "openapi/_original/caris-life-sciences-openapi.yml"
+  ]
+ },
+ {
+  "slug": "castoredc",
+  "specs": [
+   "openapi/_original/castoredc-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cdc",
+  "specs": [
+   "openapi/_original/cdc-app-notifications-api-openapi.yml",
+   "openapi/_original/cdc-code-systems-api-openapi.yml",
+   "openapi/_original/cdc-conditions-api-openapi.yml",
+   "openapi/_original/cdc-configurations-api-openapi.yml",
+   "openapi/_original/cdc-events-api-openapi.yml",
+   "openapi/_original/cdc-query-api-openapi.yml",
+   "openapi/_original/cdc-query-connector-api-openapi-3-0-api-openapi.yml",
+   "openapi/_original/cdc-releases-api-openapi.yml",
+   "openapi/_original/cdc-simulator-api-openapi.yml",
+   "openapi/_original/cdc-user-api-openapi.yml",
+   "openapi/_original/dibbs-ecr-refiner-openapi.json",
+   "openapi/_original/dibbs-query-connector-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cdc-gov",
+  "specs": [
+   "openapi/_original/cdc-app-notifications-api-openapi.yml",
+   "openapi/_original/cdc-code-systems-api-openapi.yml",
+   "openapi/_original/cdc-conditions-api-openapi.yml",
+   "openapi/_original/cdc-configurations-api-openapi.yml",
+   "openapi/_original/cdc-events-api-openapi.yml",
+   "openapi/_original/cdc-query-api-openapi.yml",
+   "openapi/_original/cdc-query-connector-api-openapi-3-0-api-openapi.yml",
+   "openapi/_original/cdc-releases-api-openapi.yml",
+   "openapi/_original/cdc-simulator-api-openapi.yml",
+   "openapi/_original/cdc-user-api-openapi.yml",
+   "openapi/_original/dibbs-ecr-refiner-openapi.json",
+   "openapi/_original/dibbs-query-connector-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cdisc",
+  "specs": [
+   "openapi/_original/cdisc-library-openapi.yml"
+  ]
+ },
+ {
+  "slug": "centaur-labs",
+  "specs": [
+   "openapi/_original/centaur-labs-authorization-api-readme-slices.json",
+   "openapi/_original/centaur-labs-ingest-api-readme-slices.json",
+   "openapi/_original/centaur-labs-label-apis-openapi.yml",
+   "openapi/_original/centaur-labs-label-apis-readme-slices.json",
+   "openapi/_original/centaur-labs-public-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "centene",
+  "specs": [
+   "openapi/_original/centene-ccm-communication-openapi.json",
+   "openapi/_original/centene-ccm-sms-userresponse-openapi.json",
+   "openapi/_original/centene-edi-core-realtime-openapi.json",
+   "openapi/_original/centene-fhir-patient-access-openapi.json",
+   "openapi/_original/centene-fhir-provider-directory-openapi.json",
+   "openapi/_original/centene-healow-health-openapi.yaml",
+   "openapi/_original/centene-pces-extract-openapi.yaml",
+   "openapi/_original/centene-pces-openapi.yaml",
+   "openapi/_original/centene-product-mapping-v2-openapi.yaml",
+   "openapi/_original/centene-provider-rtr-demographics-openapi.json",
+   "openapi/_original/centene-provider-rtr-fhir-pdex-openapi.json",
+   "openapi/_original/centene-provider-search-suggest-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "centers-for-disease-control-and-prevention",
+  "specs": [
+   "openapi/_original/centers-for-disease-control-and-prevention-dibbs-ecr-refiner-openapi.json",
+   "openapi/_original/centers-for-disease-control-and-prevention-dibbs-query-connector-openapi.yaml",
+   "openapi/_original/centers-for-disease-control-and-prevention-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cerner",
+  "specs": [
+   "openapi/_original/cerner-account-api-openapi.yml",
+   "openapi/_original/cerner-allergy-intolerance-api-openapi.yml",
+   "openapi/_original/cerner-appointment-api-openapi.yml",
+   "openapi/_original/cerner-basic-api-openapi.yml",
+   "openapi/_original/cerner-binary-api-openapi.yml",
+   "openapi/_original/cerner-capability-api-openapi.yml",
+   "openapi/_original/cerner-capability-statement-api-openapi.yml",
+   "openapi/_original/cerner-care-plan-api-openapi.yml",
+   "openapi/_original/cerner-careteam-api-openapi.yml",
+   "openapi/_original/cerner-chargeitem-api-openapi.yml",
+   "openapi/_original/cerner-communication-api-openapi.yml",
+   "openapi/_original/cerner-condition-api-openapi.yml",
+   "openapi/_original/cerner-consent-api-openapi.yml",
+   "openapi/_original/cerner-coverage-api-openapi.yml",
+   "openapi/_original/cerner-definitions-api-openapi.yml",
+   "openapi/_original/cerner-device-api-openapi.yml",
+   "openapi/_original/cerner-diagnosticreport-api-openapi.yml",
+   "openapi/_original/cerner-document-reference-api-openapi.yml",
+   "openapi/_original/cerner-encounter-api-openapi.yml",
+   "openapi/_original/cerner-export-api-openapi.yml",
+   "openapi/_original/cerner-familymemberhistory-api-openapi.yml",
+   "openapi/_original/cerner-files-api-openapi.yml",
+   "openapi/_original/cerner-generic-api-openapi.yml",
+   "openapi/_original/cerner-goal-api-openapi.yml",
+   "openapi/_original/cerner-immunization-api-openapi.yml",
+   "openapi/_original/cerner-insurance-plan-api-openapi.yml",
+   "openapi/_original/cerner-jobs-api-openapi.yml",
+   "openapi/_original/cerner-location-api-openapi.yml",
+   "openapi/_original/cerner-media-api-openapi.yml",
+   "openapi/_original/cerner-medication-administration-api-openapi.yml",
+   "openapi/_original/cerner-medication-request-api-openapi.yml",
+   "openapi/_original/cerner-medicationdispense-api-openapi.yml",
+   "openapi/_original/cerner-nutritionorder-api-openapi.yml",
+   "openapi/_original/cerner-observation-api-openapi.yml",
+   "openapi/_original/cerner-operationdefinition-api-openapi.yml",
+   "openapi/_original/cerner-organization-api-openapi.yml",
+   "openapi/_original/cerner-patient-api-openapi.yml",
+   "openapi/_original/cerner-person-api-openapi.yml",
+   "openapi/_original/cerner-practitioner-api-openapi.yml",
+   "openapi/_original/cerner-procedure-api-openapi.yml",
+   "openapi/_original/cerner-provenance-api-openapi.yml",
+   "openapi/_original/cerner-questionnaire-api-openapi.yml",
+   "openapi/_original/cerner-questionnaireresponse-api-openapi.yml",
+   "openapi/_original/cerner-relatedperson-api-openapi.yml",
+   "openapi/_original/cerner-schedule-api-openapi.yml",
+   "openapi/_original/cerner-servicerequest-api-openapi.yml",
+   "openapi/_original/cerner-slot-api-openapi.yml",
+   "openapi/_original/cerner-specimen-api-openapi.yml",
+   "openapi/_original/cerner-structuredefinition-api-openapi.yml",
+   "openapi/_original/cerner-system-api-openapi.yml",
+   "openapi/_original/oracle-health-account-api-openapi.yml",
+   "openapi/_original/oracle-health-allergy-intolerance-api-openapi.yml",
+   "openapi/_original/oracle-health-appointment-api-openapi.yml",
+   "openapi/_original/oracle-health-basic-api-openapi.yml",
+   "openapi/_original/oracle-health-binary-api-openapi.yml",
+   "openapi/_original/oracle-health-capability-api-openapi.yml",
+   "openapi/_original/oracle-health-capability-statement-api-openapi.yml",
+   "openapi/_original/oracle-health-care-plan-api-openapi.yml",
+   "openapi/_original/oracle-health-careteam-api-openapi.yml",
+   "openapi/_original/oracle-health-chargeitem-api-openapi.yml",
+   "openapi/_original/oracle-health-communication-api-openapi.yml",
+   "openapi/_original/oracle-health-condition-api-openapi.yml",
+   "openapi/_original/oracle-health-consent-api-openapi.yml",
+   "openapi/_original/oracle-health-coverage-api-openapi.yml",
+   "openapi/_original/oracle-health-definitions-api-openapi.yml",
+   "openapi/_original/oracle-health-device-api-openapi.yml",
+   "openapi/_original/oracle-health-diagnosticreport-api-openapi.yml",
+   "openapi/_original/oracle-health-document-reference-api-openapi.yml",
+   "openapi/_original/oracle-health-encounter-api-openapi.yml",
+   "openapi/_original/oracle-health-export-api-openapi.yml",
+   "openapi/_original/oracle-health-familymemberhistory-api-openapi.yml",
+   "openapi/_original/oracle-health-files-api-openapi.yml",
+   "openapi/_original/oracle-health-generic-api-openapi.yml",
+   "openapi/_original/oracle-health-goal-api-openapi.yml",
+   "openapi/_original/oracle-health-immunization-api-openapi.yml",
+   "openapi/_original/oracle-health-insurance-plan-api-openapi.yml",
+   "openapi/_original/oracle-health-jobs-api-openapi.yml",
+   "openapi/_original/oracle-health-location-api-openapi.yml",
+   "openapi/_original/oracle-health-media-api-openapi.yml",
+   "openapi/_original/oracle-health-medication-administration-api-openapi.yml",
+   "openapi/_original/oracle-health-medication-request-api-openapi.yml",
+   "openapi/_original/oracle-health-medicationdispense-api-openapi.yml",
+   "openapi/_original/oracle-health-nutritionorder-api-openapi.yml",
+   "openapi/_original/oracle-health-observation-api-openapi.yml",
+   "openapi/_original/oracle-health-operationdefinition-api-openapi.yml",
+   "openapi/_original/oracle-health-organization-api-openapi.yml",
+   "openapi/_original/oracle-health-patient-api-openapi.yml",
+   "openapi/_original/oracle-health-person-api-openapi.yml",
+   "openapi/_original/oracle-health-practitioner-api-openapi.yml",
+   "openapi/_original/oracle-health-procedure-api-openapi.yml",
+   "openapi/_original/oracle-health-provenance-api-openapi.yml",
+   "openapi/_original/oracle-health-questionnaire-api-openapi.yml",
+   "openapi/_original/oracle-health-questionnaireresponse-api-openapi.yml",
+   "openapi/_original/oracle-health-relatedperson-api-openapi.yml",
+   "openapi/_original/oracle-health-schedule-api-openapi.yml",
+   "openapi/_original/oracle-health-servicerequest-api-openapi.yml",
+   "openapi/_original/oracle-health-slot-api-openapi.yml",
+   "openapi/_original/oracle-health-specimen-api-openapi.yml",
+   "openapi/_original/oracle-health-structuredefinition-api-openapi.yml",
+   "openapi/_original/oracle-health-system-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "certifyos",
+  "specs": [
+   "openapi/_original/certifyos-openapi.json"
+  ]
+ },
+ {
+  "slug": "charmhealth",
+  "specs": [
+   "openapi/_original/charmhealth-fhir-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "childrens-hospital-of-philadelphia",
+  "specs": [
+   "openapi/_original/chop-fhir-r4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cigna",
+  "specs": [
+   "openapi/_original/cigna-drug-formulary-api-openapi.yml",
+   "openapi/_original/cigna-patient-access-api-openapi.yml",
+   "openapi/_original/cigna-provider-access-api-openapi.yml",
+   "openapi/_original/cigna-provider-directory-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "claim-md",
+  "specs": [
+   "openapi/_original/claim-md-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clarifymedical",
+  "specs": [
+   "openapi/_original/clarifymedical-openapi.json"
+  ]
+ },
+ {
+  "slug": "clear",
+  "specs": [
+   "openapi/_original/clear-verification-openapi.json"
+  ]
+ },
+ {
+  "slug": "clever-care",
+  "specs": [
+   "openapi/_original/clever-care-coverage-openapi.json",
+   "openapi/_original/clever-care-endpoint-openapi.json",
+   "openapi/_original/clever-care-explanation-of-benefit-openapi.json",
+   "openapi/_original/clever-care-healthcare-service-openapi.json",
+   "openapi/_original/clever-care-insurance-plan-openapi.json",
+   "openapi/_original/clever-care-list-openapi.json",
+   "openapi/_original/clever-care-location-openapi.json",
+   "openapi/_original/clever-care-medication-knowledge-openapi.json",
+   "openapi/_original/clever-care-organization-affiliation-openapi.json",
+   "openapi/_original/clever-care-organization-openapi.json",
+   "openapi/_original/clever-care-patient-openapi.json",
+   "openapi/_original/clever-care-practitioner-openapi.json",
+   "openapi/_original/clever-care-practitioner-role-openapi.json"
+  ]
+ },
+ {
+  "slug": "clevercarehealthplan",
+  "specs": [
+   "openapi/_original/clevercarehealthplan-fhir-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clinicalauditai",
+  "specs": [
+   "openapi/_original/clinicalauditai-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cliniko",
+  "specs": [
+   "openapi/_original/cliniko-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clover-health",
+  "specs": [
+   "openapi/_original/clover-health-fhir-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "cms",
+  "specs": [
+   "openapi/_original/marketplace-openapi.json",
+   "openapi/_original/ppl-openapi.json"
+  ]
+ },
+ {
+  "slug": "cms-blue-button",
+  "specs": [
+   "openapi/_original/cms-blue-button-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cms-gov",
+  "specs": [
+   "openapi/_original/cms-1-export-api-openapi.yml",
+   "openapi/_original/cms-2-status-api-openapi.yml",
+   "openapi/_original/cms-3-download-api-openapi.yml",
+   "openapi/_original/cms-4-capabilities-api-openapi.yml",
+   "openapi/_original/cms-admin-api-api-openapi.yml",
+   "openapi/_original/cms-api-reference-api-openapi.yml",
+   "openapi/_original/cms-attribution-api-openapi.yml",
+   "openapi/_original/cms-auth-api-openapi.yml",
+   "openapi/_original/cms-bulk-data-api-openapi.yml",
+   "openapi/_original/cms-capabilities-api-openapi.yml",
+   "openapi/_original/cms-capability-api-openapi.yml",
+   "openapi/_original/cms-code-search-api-openapi.yml",
+   "openapi/_original/cms-cost-search-api-openapi.yml",
+   "openapi/_original/cms-coverage-api-openapi.yml",
+   "openapi/_original/cms-data-api-openapi.yml",
+   "openapi/_original/cms-download-api-openapi.yml",
+   "openapi/_original/cms-enrollments-api-openapi.yml",
+   "openapi/_original/cms-explanationofbenefit-api-openapi.yml",
+   "openapi/_original/cms-export-api-openapi.yml",
+   "openapi/_original/cms-geography-api-openapi.yml",
+   "openapi/_original/cms-gov-ab2d-openapi.yml",
+   "openapi/_original/cms-gov-bcda-openapi.yml",
+   "openapi/_original/cms-gov-bfd-openapi.yml",
+   "openapi/_original/cms-gov-blue-button-2-openapi.yml",
+   "openapi/_original/cms-gov-dpc-openapi.yml",
+   "openapi/_original/cms-gov-marketplace-openapi.yml",
+   "openapi/_original/cms-gov-mcd-openapi.yml",
+   "openapi/_original/cms-gov-open-data-openapi.yml",
+   "openapi/_original/cms-gov-provider-data-openapi.yml",
+   "openapi/_original/cms-gov-qpp-openapi.yml",
+   "openapi/_original/cms-group-api-openapi.yml",
+   "openapi/_original/cms-health-api-api-openapi.yml",
+   "openapi/_original/cms-households-eligibility-api-openapi.yml",
+   "openapi/_original/cms-insurance-issuers-api-openapi.yml",
+   "openapi/_original/cms-insurance-plans-api-openapi.yml",
+   "openapi/_original/cms-job-api-openapi.yml",
+   "openapi/_original/cms-maintenance-mode-api-api-openapi.yml",
+   "openapi/_original/cms-metadata-api-openapi.yml",
+   "openapi/_original/cms-patient-api-openapi.yml",
+   "openapi/_original/cms-plans-api-openapi.yml",
+   "openapi/_original/cms-provider-drug-coverage-api-openapi.yml",
+   "openapi/_original/cms-status-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coala-life",
+  "specs": [
+   "openapi/_original/coala-life-openapi.json"
+  ]
+ },
+ {
+  "slug": "codametrix",
+  "specs": [
+   "openapi/_original/codametrix-status-openapi.yml"
+  ]
+ },
+ {
+  "slug": "collectly",
+  "specs": [
+   "openapi/_original/collectly-partners1-openapi.yml",
+   "openapi/_original/collectly-partners1-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "color",
+  "specs": [
+   "openapi/_original/color-external-api-v1-openapi.json",
+   "openapi/_original/color-external-api-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "community-health-systems",
+  "specs": [
+   "openapi/_original/chs-patient-access-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "confrere",
+  "specs": [
+   "openapi/_original/confrere-video-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coviu",
+  "specs": [
+   "openapi/_original/coviu-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "credentially",
+  "specs": [
+   "openapi/_original/credentially-gateway-openapi-original.json",
+   "openapi/_original/credentially-webhook-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "curai",
+  "specs": [
+   "openapi/_original/curai-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "cutiss",
+  "specs": [
+   "openapi/_original/cutiss-teams-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "datavant",
+  "specs": [
+   "openapi/_original/datavant-openapi.json",
+   "openapi/_original/datavant-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "davita",
+  "specs": [
+   "openapi/_original/davita-wp-rest.yml",
+   "openapi/_original/davita-www-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "department-of-veterans-affairs",
+  "specs": [
+   "openapi/_original/va-appeals-status-api-openapi.yml",
+   "openapi/_original/va-benefits-claims-api-openapi.yml",
+   "openapi/_original/va-benefits-intake-api-openapi.yml",
+   "openapi/_original/va-clinical-health-fhir-api-openapi.yml",
+   "openapi/_original/va-facilities-api-openapi.yml",
+   "openapi/_original/va-forms-api-openapi.yml",
+   "openapi/_original/va-veteran-confirmation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "develop-health",
+  "specs": [
+   "openapi/_original/develop-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "devoted-health",
+  "specs": [
+   "openapi/_original/devoted-health-patient-access-openapi-original.json",
+   "openapi/_original/devoted-health-patient-access-openapi.json",
+   "openapi/_original/devoted-health-provider-directory-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "dexcare",
+  "specs": [
+   "openapi/_original/CareOptionsAPI.json",
+   "openapi/_original/OmniSearchBundled.yaml",
+   "openapi/_original/dexcare-care-options-openapi.yml",
+   "openapi/_original/dexcare-omni-search-openapi.yml",
+   "openapi/_original/dexcare-provider-data-management-openapi.yml",
+   "openapi/_original/dexcare-slots-availability-openapi.yml",
+   "openapi/_original/dexcare-visit-booking-openapi.yml",
+   "openapi/_original/dexcare-visit-service-openapi.yml",
+   "openapi/_original/forq-availabilityBundled.json",
+   "openapi/_original/pdmapi-swagger.yaml",
+   "openapi/_original/v9bundled_public.json",
+   "openapi/_original/visit-booking.json"
+  ]
+ },
+ {
+  "slug": "diagnostic-robotics",
+  "specs": [
+   "openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json",
+   "openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.yml",
+   "openapi/_original/diagnostic-robotics-precision-population-health-openapi.json",
+   "openapi/_original/diagnostic-robotics-precision-population-health-openapi.yml",
+   "openapi/_original/diagnostic-robotics-symptom-search-openapi.json",
+   "openapi/_original/diagnostic-robotics-symptom-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "digitail",
+  "specs": [
+   "openapi/_original/digitail-openapi.json"
+  ]
+ },
+ {
+  "slug": "dips",
+  "specs": [
+   "openapi/_original/dips-federation-service-apim-export.json",
+   "openapi/_original/dips-federation-service-apim-export.yaml",
+   "openapi/_original/dips-federation-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dosespot",
+  "specs": [
+   "openapi/_original/dosespot-openapi.yml",
+   "openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json",
+   "openapi/_original/dosespot-rest-api-jumpstart-epcs-v2-swagger.json"
+  ]
+ },
+ {
+  "slug": "drchrono",
+  "specs": [
+   "openapi/_original/drchrono-rest-api-openapi-schema.json",
+   "openapi/_original/drchrono-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dyno",
+  "specs": [
+   "openapi/_original/dyno-phi-openapi-original.json",
+   "openapi/_original/dyno-phi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eden-health",
+  "specs": [
+   "openapi/_original/eden-health-grdn-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ehrbase",
+  "specs": [
+   "openapi/_original/ehrbase-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "elation-health",
+  "specs": [
+   "openapi/_original/elation-api-authentication.json",
+   "openapi/_original/elation-api-settings.json",
+   "openapi/_original/elation-billing-api.json",
+   "openapi/_original/elation-care-gaps-api-1.json",
+   "openapi/_original/elation-elation-import-api.json",
+   "openapi/_original/elation-event-subscription-api.json",
+   "openapi/_original/elation-health-api-full-openapi.yaml",
+   "openapi/_original/elation-health-elation-health-api-openapi.yml",
+   "openapi/_original/elation-insurance-api.json",
+   "openapi/_original/elation-messaging-api.json",
+   "openapi/_original/elation-orders-api.json",
+   "openapi/_original/elation-patient-document-api.json",
+   "openapi/_original/elation-patient-profile-api.json",
+   "openapi/_original/elation-practice-api.json",
+   "openapi/_original/elation-premium-patient-insurance-api.json",
+   "openapi/_original/elation-reference-data-api.json",
+   "openapi/_original/elation-scheduling-api.json",
+   "openapi/_original/elation-user-management-api.json",
+   "openapi/_original/elation-visit-notes-api.json"
+  ]
+ },
+ {
+  "slug": "element5",
+  "specs": [
+   "openapi/_original/element5-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "elevance-health",
+  "specs": [
+   "openapi/_original/elevance-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ellkay",
+  "specs": [
+   "openapi/_original/ellkay-lkcloud-api-readme-slices.json",
+   "openapi/_original/ellkay-r4-fhir-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "emis-health",
+  "specs": [
+   "openapi/_original/emis-health-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "endeavor-biomedicines",
+  "specs": [
+   "openapi/_original/endeavor-biomedicines-wp-json-route-index.json"
+  ]
+ },
+ {
+  "slug": "es-pera",
+  "specs": [
+   "openapi/_original/es-pera-openapi.json"
+  ]
+ },
+ {
+  "slug": "ezyvet",
+  "specs": [
+   "openapi/_original/ezyvet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fasten-health",
+  "specs": [
+   "openapi/_original/fasten-health-connect-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "fda-regulations",
+  "specs": [
+   "openapi/_original/fda-data-dashboard-openapi.json",
+   "openapi/_original/fda-regulations-data-dashboard-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fhir",
+  "specs": [
+   "openapi/_original/fhir-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "finn-tannlege-com",
+  "specs": [
+   "openapi/_original/finn-tannlege-com-openapi.json",
+   "openapi/_original/finn-tannlege-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "firely-server",
+  "specs": [
+   "openapi/_original/simplifier-package-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flexpa",
+  "specs": [
+   "openapi/_original/flexpa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flume-health",
+  "specs": [
+   "openapi/_original/flume-health-openapi.json"
+  ]
+ },
+ {
+  "slug": "forta-health",
+  "specs": [
+   "openapi/_original/forta-health-openapi.json",
+   "openapi/_original/forta-health-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "freshpaint",
+  "specs": [
+   "openapi/_original/freshpaint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "garner",
+  "specs": [
+   "openapi/_original/garner-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "garner-health",
+  "specs": [
+   "openapi/_original/garner-health-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "genialis",
+  "specs": [
+   "openapi/_original/genialis-base-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "google-cloud-healthcare",
+  "specs": [
+   "openapi/_original/openapi-v1.yaml",
+   "openapi/_original/openapi-v1beta1.yaml"
+  ]
+ },
+ {
+  "slug": "gp-connect",
+  "specs": [
+   "openapi/_original/gp-connect-access-record-structured-fhir.yaml",
+   "openapi/_original/gp-connect-appointments-management-fhir.yaml",
+   "openapi/_original/gp-connect-patient-facing-access-record-fhir.yaml",
+   "openapi/_original/gp-connect-patient-facing-prescriptions-management-fhir.yaml",
+   "openapi/_original/gp-connect-update-record-fhir.yaml"
+  ]
+ },
+ {
+  "slug": "gridspace",
+  "specs": [
+   "openapi/_original/gridspace-openapi.json"
+  ]
+ },
+ {
+  "slug": "guardant-health",
+  "specs": [
+   "openapi/_original/guardant-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "h1",
+  "specs": [
+   "openapi/_original/h1-openapi-original.json",
+   "openapi/_original/h1-price-transparency-v2-openapi.json",
+   "openapi/_original/ribbon-health-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "halaxy",
+  "specs": [
+   "openapi/_original/halaxy-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "halo-connect",
+  "specs": [
+   "openapi/_original/halo-connect-desktop-openapi.json",
+   "openapi/_original/halo-connect-integrator-openapi.json"
+  ]
+ },
+ {
+  "slug": "harbinger-health",
+  "specs": [
+   "openapi/_original/harbinger-health-wordpress-wp-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "health-gorilla",
+  "specs": [
+   "openapi/_original/health-gorilla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "healthsherpa",
+  "specs": [
+   "openapi/_original/healthsherpa-openapi.json"
+  ]
+ },
+ {
+  "slug": "heidi-health",
+  "specs": [
+   "openapi/_original/heidi-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hhaexchange",
+  "specs": [
+   "openapi/_original/hhaexchange-fhir-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hhs",
+  "specs": [
+   "openapi/_original/simpler-grants-gov.yml"
+  ]
+ },
+ {
+  "slug": "hint-health",
+  "specs": [
+   "openapi/_original/hint-health-hint-health-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hl7-fhir",
+  "specs": [
+   "openapi/_original/hl7-fhir-r4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "huma",
+  "specs": [
+   "openapi/_original/huma-platform-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "human-api",
+  "specs": [
+   "openapi/_original/human-api-admin-consumer-link-openapi.json",
+   "openapi/_original/human-api-admin-order-types-openapi.json",
+   "openapi/_original/human-api-admin-report-by-id-openapi.json",
+   "openapi/_original/human-api-admin-subscription-create-openapi.json",
+   "openapi/_original/human-api-admin-subscription-delete-openapi.json",
+   "openapi/_original/human-api-admin-subscription-details-openapi.json",
+   "openapi/_original/human-api-admin-subscriptions-list-openapi.json",
+   "openapi/_original/human-api-admin-user-actions-openapi.json",
+   "openapi/_original/human-api-admin-user-create-openapi.json",
+   "openapi/_original/human-api-admin-user-details-openapi.json",
+   "openapi/_original/human-api-admin-user-providers-openapi.json",
+   "openapi/_original/human-api-admin-user-reports-openapi.json",
+   "openapi/_original/human-api-admin-users-list-openapi.json",
+   "openapi/_original/human-api-auth-admin-token-openapi.json",
+   "openapi/_original/human-api-auth-connect-token-openapi.json"
+  ]
+ },
+ {
+  "slug": "humanapi",
+  "specs": [
+   "openapi/_original/humanapi-admin-openapi.yml",
+   "openapi/_original/humanapi-auth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "independence-blue-cross",
+  "specs": [
+   "openapi/_original/independence-blue-cross-cms-swagger.json",
+   "openapi/_original/independence-blue-cross-formulary-openapi.yml",
+   "openapi/_original/independence-blue-cross-patient-openapi.yml",
+   "openapi/_original/independence-blue-cross-provider-openapi.yml"
+  ]
+ },
+ {
+  "slug": "intakeq",
+  "specs": [
+   "openapi/_original/intakeq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "intelycare",
+  "specs": [
+   "openapi/_original/intelycare-external-scheduling-openapi.yml",
+   "openapi/_original/intelycare-openapi.json"
+  ]
+ },
+ {
+  "slug": "jane-app",
+  "specs": [
+   "openapi/_original/jane-app-jdp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jefferson-health",
+  "specs": [
+   "openapi/_original/jefferson-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "johnson-and-johnson",
+  "specs": [
+   "openapi/_original/johnson-and-johnson-lifescan-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "junction",
+  "specs": [
+   "openapi/_original/swagger.json"
+  ]
+ },
+ {
+  "slug": "junction-com",
+  "specs": [
+   "openapi/_original/junction-openapi-live-2026-10-12.json",
+   "openapi/_original/vital-lab-report-parser-api-openapi.yml",
+   "openapi/_original/vital-lab-testing-api-openapi.yml",
+   "openapi/_original/vital-link-api-openapi.yml",
+   "openapi/_original/vital-openapi-original.json",
+   "openapi/_original/vital-openapi-original.yml",
+   "openapi/_original/vital-sense-api-openapi.yml",
+   "openapi/_original/vital-team-api-openapi.yml",
+   "openapi/_original/vital-users-api-openapi.yml",
+   "openapi/_original/vital-wearables-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "justworks",
+  "specs": [
+   "openapi/_original/justworks-payroll-api-openapi.yml",
+   "openapi/_original/justworks-time-off-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kno2",
+  "specs": [
+   "openapi/_original/kno2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kontaktio",
+  "specs": [
+   "openapi/_original/kontaktio-device-management-openapi-original.yml",
+   "openapi/_original/kontaktio-device-management-openapi.yml",
+   "openapi/_original/kontaktio-entity-management-openapi-original.yml",
+   "openapi/_original/kontaktio-entity-management-openapi.yml",
+   "openapi/_original/kontaktio-location-occupancy-openapi-original.yml",
+   "openapi/_original/kontaktio-location-occupancy-openapi.yml",
+   "openapi/_original/kontaktio-spaces-openapi-original.yml",
+   "openapi/_original/kontaktio-spaces-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kota",
+  "specs": [
+   "openapi/_original/kota-api-reference-openapi.json",
+   "openapi/_original/kota-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "leapcure",
+  "specs": [
+   "openapi/_original/leapcure-blog-content-openapi.yml"
+  ]
+ },
+ {
+  "slug": "life-sciences",
+  "specs": [
+   "openapi/_original/life-sciences-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lifen",
+  "specs": [
+   "openapi/_original/lifen-authentication-api-openapi.json",
+   "openapi/_original/lifen-fhir-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "loa-healthcare-pricing-api",
+  "specs": [
+   "openapi/_original/loa-healthcare-pricing-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "luma-health",
+  "specs": [
+   "openapi/_original/luma-health-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "lynx",
+  "specs": [
+   "openapi/_original/lynx-account-api-readme-slices.json",
+   "openapi/_original/lynx-card-management-api-readme-slices.json",
+   "openapi/_original/lynx-claims-service-api-readme-slices.json",
+   "openapi/_original/lynx-client-org-management-api-readme-slices.json",
+   "openapi/_original/lynx-commerce-order-api-readme-slices.json",
+   "openapi/_original/lynx-commodity-api-readme-slices.json",
+   "openapi/_original/lynx-copay-management-service-api-readme-slices.json",
+   "openapi/_original/lynx-enrollment-api-readme-slices.json",
+   "openapi/_original/lynx-external-account-api-readme-slices.json",
+   "openapi/_original/lynx-external-notification-api-readme-slices.json",
+   "openapi/_original/lynx-investments-api-readme-slices.json",
+   "openapi/_original/lynx-member-management-api-readme-slices.json",
+   "openapi/_original/lynx-payment-api-readme-slices.json",
+   "openapi/_original/lynx-related-person-api-readme-slices.json",
+   "openapi/_original/lynx-substantiation-service-api-readme-slices.json",
+   "openapi/_original/lynx-tags-api-readme-slices.json",
+   "openapi/_original/lynx-transaction-api-readme-slices.json",
+   "openapi/_original/lynx-upload-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "madaket",
+  "specs": [
+   "openapi/_original/madaket-provider-api.yml"
+  ]
+ },
+ {
+  "slug": "matternet",
+  "specs": [
+   "openapi/_original/matternet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "medadvisor",
+  "specs": [
+   "openapi/_original/medadvisor-openapi.json",
+   "openapi/_original/medadvisor-pharmacy-unified-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "medblocks",
+  "specs": [
+   "openapi/_original/medblocks-platform-openapi.json",
+   "openapi/_original/medblocks-public-site-openapi.json"
+  ]
+ },
+ {
+  "slug": "meddra",
+  "specs": [
+   "openapi/_original/meddra-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "medigo",
+  "specs": [
+   "openapi/_original/medigo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "meditech",
+  "specs": [
+   "openapi/_original/meditech-fhir-openapi.yml"
+  ]
+ },
+ {
+  "slug": "medplum",
+  "specs": [
+   "openapi/_original/medplum-openapi.json"
+  ]
+ },
+ {
+  "slug": "medtrainer",
+  "specs": [
+   "openapi/_original/medtrainer-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "metriport",
+  "specs": [
+   "openapi/_original/metriport-openapi.yml"
+  ]
+ },
+ {
+  "slug": "minicor",
+  "specs": [
+   "openapi/_original/minicor-openapi.json"
+  ]
+ },
+ {
+  "slug": "modernizing-medicine",
+  "specs": [
+   "openapi/_original/modernizing-medicine-certified-fhir-api-openapi.json",
+   "openapi/_original/modernizing-medicine-certified-fhir-auth-openapi.json",
+   "openapi/_original/modernizing-medicine-ema-proprietary-api-openapi.json",
+   "openapi/_original/modernizing-medicine-ema-proprietary-auth-openapi.json"
+  ]
+ },
+ {
+  "slug": "moxe-health",
+  "specs": [
+   "openapi/_original/moxe-health-chart-retrieval-initiate-openapi.json",
+   "openapi/_original/moxe-health-chart-retrieval-status-openapi.json",
+   "openapi/_original/moxe-health-claim-management-initiate-openapi.json",
+   "openapi/_original/moxe-health-claim-management-status-openapi.json"
+  ]
+ },
+ {
+  "slug": "mv-sistemas",
+  "specs": [
+   "openapi/_original/mv-sistemas-clinic-agenda-openapi.yaml",
+   "openapi/_original/mv-sistemas-clinic-connect-attendance-openapi.yaml",
+   "openapi/_original/mv-sistemas-clinic-connect-openapi.yaml",
+   "openapi/_original/mv-sistemas-clinic-connect-performance-schedule-openapi.yml",
+   "openapi/_original/mv-sistemas-clinic-patient-audit-openapi.yaml",
+   "openapi/_original/mv-sistemas-events-openapi.json",
+   "openapi/_original/mv-sistemas-face-recognition-openapi.json",
+   "openapi/_original/mv-sistemas-gestao-beneficiarios-openapi.json",
+   "openapi/_original/mv-sistemas-hub-operadora-openapi.yaml",
+   "openapi/_original/mv-sistemas-news-openapi.json",
+   "openapi/_original/mv-sistemas-pendencias-saude-openapi.json",
+   "openapi/_original/mv-sistemas-performance-schedule-webhook-openapi.yml",
+   "openapi/_original/mv-sistemas-personal-attendance-openapi.json",
+   "openapi/_original/mv-sistemas-personal-health-ficha-clinica-openapi.json",
+   "openapi/_original/mv-sistemas-protocolo-entrada-openapi.json",
+   "openapi/_original/mv-sistemas-regulacao-openapi.yaml",
+   "openapi/_original/mv-sistemas-shared-request-openapi.yaml",
+   "openapi/_original/mv-sistemas-users-openapi.json"
+  ]
+ },
+ {
+  "slug": "myome",
+  "specs": [
+   "openapi/_original/myome-openapi-original.json",
+   "openapi/_original/myome-openapi.json"
+  ]
+ },
+ {
+  "slug": "mytomorrows",
+  "specs": [
+   "openapi/_original/mytomorrows-enterprise-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "nabla",
+  "specs": [
+   "openapi/_original/nabla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "natera",
+  "specs": [
+   "openapi/_original/natera-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nedap",
+  "specs": [
+   "openapi/_original/nedap-ons-authorization-openapi-original.json",
+   "openapi/_original/nedap-ons-deprecated-openapi-original.json",
+   "openapi/_original/nedap-ons-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nexhealth",
+  "specs": [
+   "openapi/_original/nexhealth-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nextgen-healthcare",
+  "specs": [
+   "openapi/_original/nextgen-office-bulk-fhir-r4-openapi.yml",
+   "openapi/_original/nextgen-office-fhir-r4-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "nhs-api",
+  "specs": [
+   "openapi/_original/e-referrals-service-api.yaml",
+   "openapi/_original/organisation-data-service-fhir-r4-api.yaml",
+   "openapi/_original/organisation-data-service-fhir-stu3-api.yaml"
+  ]
+ },
+ {
+  "slug": "nhs-digital",
+  "specs": [
+   "openapi/_original/booking-and-referral-fhir-api.yaml",
+   "openapi/_original/e-referrals-service-api.yaml",
+   "openapi/_original/nhs-app-api.yaml"
+  ]
+ },
+ {
+  "slug": "nhs-england",
+  "specs": [
+   "openapi/_original/nhs-app-openapi.yaml",
+   "openapi/_original/nhs-booking-and-referral-fhir-openapi.yaml",
+   "openapi/_original/nhs-communications-manager-openapi.yaml",
+   "openapi/_original/nhs-e-referral-service-openapi.yaml",
+   "openapi/_original/nhs-immunisation-history-openapi.yaml",
+   "openapi/_original/nhs-organisation-data-service-fhir-r4-openapi.yaml",
+   "openapi/_original/nhs-service-search-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "nirvana",
+  "specs": [
+   "openapi/_original/nirvana-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nomad-health",
+  "specs": [
+   "openapi/_original/nomad-health-api-openapi.yml",
+   "openapi/_original/nomad-health-api-swagger-original.json",
+   "openapi/_original/nomad-health-platform-openapi.yml",
+   "openapi/_original/nomad-health-platform-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "noyo",
+  "specs": [
+   "openapi/_original/noyo-carrier-openapi.json",
+   "openapi/_original/noyo-fulfillment-openapi.json",
+   "openapi/_original/noyo-tracking-openapi.json"
+  ]
+ },
+ {
+  "slug": "ocean-health-systems",
+  "specs": [
+   "openapi/_original/ocean-health-systems-ckm-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "offendersearch",
+  "specs": [
+   "openapi/_original/offendersearch-openapi.json",
+   "openapi/_original/offendersearch-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "ok-capsule",
+  "specs": [
+   "openapi/_original/ok-capsule-core-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "one-codex",
+  "specs": [
+   "openapi/_original/one-codex-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "open-payments",
+  "specs": [
+   "openapi/_original/open-payments-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opendental",
+  "specs": [
+   "openapi/_original/opendental-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openehr",
+  "specs": [
+   "openapi/_original/openehr-admin-openapi.yml",
+   "openapi/_original/openehr-admin.yaml",
+   "openapi/_original/openehr-definition-openapi.yml",
+   "openapi/_original/openehr-definition.yaml",
+   "openapi/_original/openehr-demographic-openapi.yml",
+   "openapi/_original/openehr-demographic.yaml",
+   "openapi/_original/openehr-ehr-openapi.yml",
+   "openapi/_original/openehr-ehr.yaml",
+   "openapi/_original/openehr-overview.yaml",
+   "openapi/_original/openehr-query-openapi.yml",
+   "openapi/_original/openehr-query.yaml",
+   "openapi/_original/openehr-system-openapi.yml",
+   "openapi/_original/openehr-system.yaml"
+  ]
+ },
+ {
+  "slug": "openfda",
+  "specs": [
+   "openapi/_original/openfda-openapi.yml"
+  ]
+ },
+ {
+  "slug": "optum",
+  "specs": [
+   "openapi/_original/optum-abm-care-decision-support-api-openapi.yml",
+   "openapi/_original/optum-abm-care-decision-support-api.json",
+   "openapi/_original/optum-abm-pre-pay-lab-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-pre-pay-lab-api-1-0-0.json",
+   "openapi/_original/optum-abm-prepay-dme-claim-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-prepay-dme-claim-api-1-0-0.json",
+   "openapi/_original/optum-abm-priorauth-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-priorauth-api-1-0-0.json",
+   "openapi/_original/optum-attachment-openapi.yml",
+   "openapi/_original/optum-attachment.json",
+   "openapi/_original/optum-auth-referral-submission-api.json",
+   "openapi/_original/optum-auth-referral-submission-health-check-openapi.yml",
+   "openapi/_original/optum-auth-referral-submission-health-check.json",
+   "openapi/_original/optum-authorization-auth-only-openapi.yml",
+   "openapi/_original/optum-authorization-auth-only.json",
+   "openapi/_original/optum-benefit-check-api.json",
+   "openapi/_original/optum-claim-actions-api.json",
+   "openapi/_original/optum-claim-actions-health-check-openapi.yml",
+   "openapi/_original/optum-claim-actions-health-check.json",
+   "openapi/_original/optum-claim-inquiry-api.json",
+   "openapi/_original/optum-claim-inquiry-health-check-openapi.yml",
+   "openapi/_original/optum-claim-inquiry-health-check.json",
+   "openapi/_original/optum-claim-pre-check-api-openapi.yml",
+   "openapi/_original/optum-claim-pre-check-api.json",
+   "openapi/_original/optum-cms-common-facility-openapi.yml",
+   "openapi/_original/optum-cms-common-facility.json",
+   "openapi/_original/optum-cms-common-physician-openapi.yml",
+   "openapi/_original/optum-cms-common-physician.json",
+   "openapi/_original/optum-core-service-openapi.yml",
+   "openapi/_original/optum-core-service.json",
+   "openapi/_original/optum-cross-community-rest-apis-xc-rest-openapi.yml",
+   "openapi/_original/optum-cross-community-rest-apis-xc-rest.json",
+   "openapi/_original/optum-dental-attachment-api-openapi.yml",
+   "openapi/_original/optum-dental-attachment-api.json",
+   "openapi/_original/optum-dental-pre-care-estimate-api-openapi.yml",
+   "openapi/_original/optum-dental-pre-care-estimate-api.json",
+   "openapi/_original/optum-document-search-api.json",
+   "openapi/_original/optum-document-search-health-check-openapi.yml",
+   "openapi/_original/optum-document-search-health-check.json",
+   "openapi/_original/optum-edi-enrollment-v1-openapi.yml",
+   "openapi/_original/optum-edi-enrollment-v1.json",
+   "openapi/_original/optum-eligibility-pre-service-health-check-openapi.yml",
+   "openapi/_original/optum-eligibility-pre-service-health-check.json",
+   "openapi/_original/optum-enhanced-eligibility-api-openapi.yml",
+   "openapi/_original/optum-enhanced-eligibility-api.json",
+   "openapi/_original/optum-file-and-document-tracking-api-v1-openapi.yml",
+   "openapi/_original/optum-file-and-document-tracking-api-v1.json",
+   "openapi/_original/optum-formatting-rule-api-openapi.yml",
+   "openapi/_original/optum-formatting-rule-api.json",
+   "openapi/_original/optum-medical-network-attachment-retrieval-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachment-retrieval-v1.json",
+   "openapi/_original/optum-medical-network-attachment-status-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachment-status-v1.json",
+   "openapi/_original/optum-medical-network-attachments-submission-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachments-submission-v1.json",
+   "openapi/_original/optum-medical-network-claim-status-v2-openapi.yml",
+   "openapi/_original/optum-medical-network-claim-status-v2.json",
+   "openapi/_original/optum-medical-network-claims-responses-and-reports-v2-openapi.yml",
+   "openapi/_original/optum-medical-network-claims-responses-and-reports-v2.json",
+   "openapi/_original/optum-medical-network-eligibility-v3-openapi.yml",
+   "openapi/_original/optum-medical-network-eligibility-v3.json",
+   "openapi/_original/optum-medical-network-institutional-claims-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-institutional-claims-v1.json",
+   "openapi/_original/optum-medical-network-professional-claims-v3-openapi.yml",
+   "openapi/_original/optum-medical-network-professional-claims-v3.json",
+   "openapi/_original/optum-ncc-data-acquisition-api-openapi.yml",
+   "openapi/_original/optum-ncc-data-acquisition-api.json",
+   "openapi/_original/optum-odx-v3-xdr-ingestion-service-api-openapi.yml",
+   "openapi/_original/optum-odx-v3-xdr-ingestion-service-api.json",
+   "openapi/_original/optum-optum-common-facility-openapi.yml",
+   "openapi/_original/optum-optum-common-facility.json",
+   "openapi/_original/optum-optum-common-physician-openapi.yml",
+   "openapi/_original/optum-optum-common-physician.json",
+   "openapi/_original/optum-optum-real-health-check-api-openapi.yml",
+   "openapi/_original/optum-optum-real-health-check-api.json",
+   "openapi/_original/optum-optum-real-pre-service-eligibility-api-openapi.yml",
+   "openapi/_original/optum-optum-real-pre-service-eligibility-api.json",
+   "openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml",
+   "openapi/_original/optum-optum-real-time-econtent-web-services.json",
+   "openapi/_original/optum-patient-benefit-check-health-check-openapi.yml",
+   "openapi/_original/optum-patient-benefit-check-health-check.json",
+   "openapi/_original/optum-payer-list-api-v1-openapi.yml",
+   "openapi/_original/optum-payer-list-api-v1.json",
+   "openapi/_original/optum-pes-payer-enrollments-v1-openapi.yml",
+   "openapi/_original/optum-pes-payer-enrollments-v1.json",
+   "openapi/_original/optum-prior-authorization-v1-openapi.yml",
+   "openapi/_original/optum-prior-authorization-v1.json",
+   "openapi/_original/optum-prometheus-analytics-api-job-submission-openapi.yml",
+   "openapi/_original/optum-prometheus-analytics-api-job-submission.json",
+   "openapi/_original/optum-prometheus-analytics-checkjob-openapi.yml",
+   "openapi/_original/optum-prometheus-analytics-checkjob.json",
+   "openapi/_original/optum-real-dental-attachments-api-openapi.yml",
+   "openapi/_original/optum-real-dental-attachments-api.json",
+   "openapi/_original/optum-real-dental-claim-status-api-openapi.yml",
+   "openapi/_original/optum-real-dental-claim-status-api.json",
+   "openapi/_original/optum-real-dental-claim-submission-api-openapi.yml",
+   "openapi/_original/optum-real-dental-claim-submission-api.json",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-api-openapi.yml",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-api.json",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-intelligence-api-openapi.yml",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-intelligence-api.json",
+   "openapi/_original/optum-real-prior-authorization-api-openapi.yml",
+   "openapi/_original/optum-real-prior-authorization-api.json",
+   "openapi/_original/optum-real-provider-access-api-openapi.yml",
+   "openapi/_original/optum-real-provider-access-api.json",
+   "openapi/_original/optum-security-and-authorization-v2-openapi.yml",
+   "openapi/_original/optum-security-and-authorization-v2.json",
+   "openapi/_original/optum-security-and-authorization-v3-openapi.yml",
+   "openapi/_original/optum-security-and-authorization-v3.json",
+   "openapi/_original/optum-submitter-api-openapi.yml",
+   "openapi/_original/optum-submitter-api.json",
+   "openapi/_original/optum-telecom-formatter-api-openapi.yml",
+   "openapi/_original/optum-telecom-formatter-api.json"
+  ]
+ },
+ {
+  "slug": "oracle-health",
+  "specs": [
+   "openapi/_original/cerner-account-api-openapi.yml",
+   "openapi/_original/cerner-allergy-intolerance-api-openapi.yml",
+   "openapi/_original/cerner-appointment-api-openapi.yml",
+   "openapi/_original/cerner-basic-api-openapi.yml",
+   "openapi/_original/cerner-binary-api-openapi.yml",
+   "openapi/_original/cerner-capability-api-openapi.yml",
+   "openapi/_original/cerner-capability-statement-api-openapi.yml",
+   "openapi/_original/cerner-care-plan-api-openapi.yml",
+   "openapi/_original/cerner-careteam-api-openapi.yml",
+   "openapi/_original/cerner-chargeitem-api-openapi.yml",
+   "openapi/_original/cerner-communication-api-openapi.yml",
+   "openapi/_original/cerner-condition-api-openapi.yml",
+   "openapi/_original/cerner-consent-api-openapi.yml",
+   "openapi/_original/cerner-coverage-api-openapi.yml",
+   "openapi/_original/cerner-definitions-api-openapi.yml",
+   "openapi/_original/cerner-device-api-openapi.yml",
+   "openapi/_original/cerner-diagnosticreport-api-openapi.yml",
+   "openapi/_original/cerner-document-reference-api-openapi.yml",
+   "openapi/_original/cerner-encounter-api-openapi.yml",
+   "openapi/_original/cerner-export-api-openapi.yml",
+   "openapi/_original/cerner-familymemberhistory-api-openapi.yml",
+   "openapi/_original/cerner-files-api-openapi.yml",
+   "openapi/_original/cerner-generic-api-openapi.yml",
+   "openapi/_original/cerner-goal-api-openapi.yml",
+   "openapi/_original/cerner-immunization-api-openapi.yml",
+   "openapi/_original/cerner-insurance-plan-api-openapi.yml",
+   "openapi/_original/cerner-jobs-api-openapi.yml",
+   "openapi/_original/cerner-location-api-openapi.yml",
+   "openapi/_original/cerner-media-api-openapi.yml",
+   "openapi/_original/cerner-medication-administration-api-openapi.yml",
+   "openapi/_original/cerner-medication-request-api-openapi.yml",
+   "openapi/_original/cerner-medicationdispense-api-openapi.yml",
+   "openapi/_original/cerner-nutritionorder-api-openapi.yml",
+   "openapi/_original/cerner-observation-api-openapi.yml",
+   "openapi/_original/cerner-operationdefinition-api-openapi.yml",
+   "openapi/_original/cerner-organization-api-openapi.yml",
+   "openapi/_original/cerner-patient-api-openapi.yml",
+   "openapi/_original/cerner-person-api-openapi.yml",
+   "openapi/_original/cerner-practitioner-api-openapi.yml",
+   "openapi/_original/cerner-procedure-api-openapi.yml",
+   "openapi/_original/cerner-provenance-api-openapi.yml",
+   "openapi/_original/cerner-questionnaire-api-openapi.yml",
+   "openapi/_original/cerner-questionnaireresponse-api-openapi.yml",
+   "openapi/_original/cerner-relatedperson-api-openapi.yml",
+   "openapi/_original/cerner-schedule-api-openapi.yml",
+   "openapi/_original/cerner-servicerequest-api-openapi.yml",
+   "openapi/_original/cerner-slot-api-openapi.yml",
+   "openapi/_original/cerner-specimen-api-openapi.yml",
+   "openapi/_original/cerner-structuredefinition-api-openapi.yml",
+   "openapi/_original/cerner-system-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-health-data-intelligence",
+  "specs": [
+   "openapi/_original/oracle-health-data-intelligence-openapi.yml"
+  ]
+ },
+ {
+  "slug": "orakl",
+  "specs": [
+   "openapi/_original/orakl-website-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "orderly-health",
+  "specs": [
+   "openapi/_original/orderly-health-provider-directory-openapi.json"
+  ]
+ },
+ {
+  "slug": "particle-health",
+  "specs": [
+   "openapi/_original/particle-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paubox",
+  "specs": [
+   "openapi/_original/paubox-email-api-openapi.yaml",
+   "openapi/_original/paubox-forms-api-openapi.yaml",
+   "openapi/_original/paubox-marketing-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "payerset",
+  "specs": [
+   "openapi/_original/payerset-openapi.yml"
+  ]
+ },
+ {
+  "slug": "penn-medicine",
+  "specs": [
+   "openapi/_original/penn-medicine-fhir-r4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "photon",
+  "specs": [
+   "openapi/_original/photon-website-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "plansource",
+  "specs": [
+   "openapi/_original/plansource-admin-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pointclickcare",
+  "specs": [
+   "openapi/_original/pointclickcare-ehr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "predoc",
+  "specs": [
+   "openapi/_original/predoc-partner-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "prosper-ai",
+  "specs": [
+   "openapi/_original/prosper-ai-voice-openapi.json"
+  ]
+ },
+ {
+  "slug": "quenza",
+  "specs": [
+   "openapi/_original/quenza-openapi.yml"
+  ]
+ },
+ {
+  "slug": "qure.ai",
+  "specs": [
+   "openapi/_original/qure.ai-platform-api-1-openapi-original.yml",
+   "openapi/_original/qure.ai-platform-api-2-openapi-original.yml",
+   "openapi/_original/qure.ai-platform-api-xray-ct-openapi.yml",
+   "openapi/_original/qure.ai-platform-api-xray-v2-er-openapi.yml"
+  ]
+ },
+ {
+  "slug": "replyrai",
+  "specs": [
+   "openapi/_original/replyrai-platform-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "ribbon-health",
+  "specs": [
+   "openapi/_original/ribbon-health-h1-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ritten",
+  "specs": [
+   "openapi/_original/ritten-external-api-openapi-original.yaml",
+   "openapi/_original/ritten-external-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "scispot",
+  "specs": [
+   "openapi/_original/scispot-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scratchpay",
+  "specs": [
+   "openapi/_original/scratchpay-partner-1.0.0-apis-swagger.yml",
+   "openapi/_original/scratchpay-scratchpay-1.0.0-apis-swagger.yml",
+   "openapi/_original/scratchpay-scratchpay-care-credit-1.0.0-apis-swagger.yml"
+  ]
+ },
+ {
+  "slug": "serif-health",
+  "specs": [
+   "openapi/_original/serif-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "seven-bridges",
+  "specs": [
+   "openapi/_original/seven-bridges-cgc-openapi.json",
+   "openapi/_original/seven-bridges-platform-openapi.json"
+  ]
+ },
+ {
+  "slug": "silna",
+  "specs": [
+   "openapi/_original/silna-openapi.json"
+  ]
+ },
+ {
+  "slug": "smarthealthit",
+  "specs": [
+   "openapi/_original/smarthealthit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soda-health",
+  "specs": [
+   "openapi/_original/soda-health-docs-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sonde-health",
+  "specs": [
+   "openapi/_original/sonde-health-screening-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "speccheck",
+  "specs": [
+   "openapi/_original/speccheck-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spike-api",
+  "specs": [
+   "openapi/_original/spike-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spruce-health",
+  "specs": [
+   "openapi/_original/spruce-health-contact-fields-openapi.yml",
+   "openapi/_original/spruce-health-contact-tags-openapi.yml",
+   "openapi/_original/spruce-health-contacts-openapi.yml",
+   "openapi/_original/spruce-health-conversation-item-openapi.yml",
+   "openapi/_original/spruce-health-conversation-tags-openapi.yml",
+   "openapi/_original/spruce-health-conversations-openapi.yml",
+   "openapi/_original/spruce-health-internal-endpoints-openapi.yml",
+   "openapi/_original/spruce-health-media-openapi.yml",
+   "openapi/_original/spruce-health-openapi.json",
+   "openapi/_original/spruce-health-organization-openapi.yml",
+   "openapi/_original/spruce-health-phone-lines-openapi.yml",
+   "openapi/_original/spruce-health-saved-messages-openapi.yml",
+   "openapi/_original/spruce-health-scheduled-messages-openapi.yml",
+   "openapi/_original/spruce-health-teams-openapi.yml",
+   "openapi/_original/spruce-health-transcription-openapi.yml",
+   "openapi/_original/spruce-health-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stedi",
+  "specs": [
+   "openapi/_original/stedi-claims-openapi.yml",
+   "openapi/_original/stedi-core-openapi.yml",
+   "openapi/_original/stedi-enrollment-openapi.yml",
+   "openapi/_original/stedi-event-destinations-openapi.yml",
+   "openapi/_original/stedi-healthcare-openapi.yml",
+   "openapi/_original/stedi-manager-openapi.yml",
+   "openapi/_original/stedi-payers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "strand-ai",
+  "specs": [
+   "openapi/_original/strand-ai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "substance-abuse-and-mental-health-services-administration",
+  "specs": [
+   "openapi/_original/samhsa-treatment-locator-openapi.yml"
+  ]
+ },
+ {
+  "slug": "suki-ai",
+  "specs": [
+   "openapi/_original/suki-ai-ambient-api-openapi.yml",
+   "openapi/_original/suki-ai-form-filling-api-openapi.yml",
+   "openapi/_original/suki-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sun-life",
+  "specs": [
+   "openapi/_original/sun-life-dentaquest-fhir-metadata-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-provider-directory-openapi.json"
+  ]
+ },
+ {
+  "slug": "superdial",
+  "specs": [
+   "openapi/_original/superdial-openapi.json"
+  ]
+ },
+ {
+  "slug": "syllable",
+  "specs": [
+   "openapi/_original/syllable-sdk-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "synthego",
+  "specs": [
+   "openapi/_original/synthego-order-openapi.json"
+  ]
+ },
+ {
+  "slug": "tebra",
+  "specs": [
+   "openapi/_original/tebra-clinical-openapi.yml",
+   "openapi/_original/tebra-fhir-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "temple-health",
+  "specs": [
+   "openapi/_original/temple-health-temple-health-fhir-r4-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tempus-ai",
+  "specs": [
+   "openapi/_original/tempus-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tenet-healthcare",
+  "specs": [
+   "openapi/_original/tenet-healthcare-fhir-openapi.yml"
+  ]
+ },
+ {
+  "slug": "terra-api",
+  "specs": [
+   "openapi/_original/terra-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thatch",
+  "specs": [
+   "openapi/_original/thatch-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thatch-health",
+  "specs": [
+   "openapi/_original/thatch-health-partners-openapi.yml",
+   "openapi/_original/thatch-health-platforms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "thrive-global",
+  "specs": [
+   "openapi/_original/thrive-global-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "truepill",
+  "specs": [
+   "openapi/_original/truepill-fuzerx-swagger.json"
+  ]
+ },
+ {
+  "slug": "turquoise-health",
+  "specs": [
+   "openapi/_original/turquoise-health-consumer-pricing-openapi-original.json",
+   "openapi/_original/turquoise-health-consumer-pricing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tuva-health",
+  "specs": [
+   "openapi/_original/tuva-health-empi-openapi-original.yml",
+   "openapi/_original/tuva-health-empi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ultrahuman",
+  "specs": [
+   "openapi/_original/ultrahuman-openapi.yml"
+  ]
+ },
+ {
+  "slug": "uncovr",
+  "specs": [
+   "openapi/_original/uncovr-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "united-states-national-library-of-medicine",
+  "specs": [
+   "openapi/_original/ncbi-blast-openapi.yml",
+   "openapi/_original/ncbi-datasets-openapi.yml",
+   "openapi/_original/ncbi-e-utilities-openapi.yml",
+   "openapi/_original/nlm-clinicaltrials-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unitedhealth",
+  "specs": [
+   "openapi/_original/unitedhealth-optum-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unitedhealthcare",
+  "specs": [
+   "openapi/_original/unitedhealthcare-interoperability-api-openapi.yml",
+   "openapi/_original/unitedhealthcare-provider-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "va",
+  "specs": [
+   "openapi/_original/va-appealable-issues-openapi.json",
+   "openapi/_original/va-appeals-status-openapi.json",
+   "openapi/_original/va-claims-api-openapi.json",
+   "openapi/_original/va-decision-reviews-openapi.json",
+   "openapi/_original/va-higher-level-reviews-openapi.json",
+   "openapi/_original/va-legacy-appeals-openapi.json",
+   "openapi/_original/va-notice-of-disagreements-openapi.json",
+   "openapi/_original/va-patient-health-openapi.yaml",
+   "openapi/_original/va-supplemental-claims-openapi.json",
+   "openapi/_original/va-veteran-accreditation-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "va-gov",
+  "specs": [
+   "openapi/_original/va-gov-address-validation-v3-openapi.json",
+   "openapi/_original/va-gov-appealable-issues-v0-openapi.json",
+   "openapi/_original/va-gov-appeals-status-v0-openapi.json",
+   "openapi/_original/va-gov-appeals-status-v1-openapi.json",
+   "openapi/_original/va-gov-benefits-claims-v1-openapi.json",
+   "openapi/_original/va-gov-benefits-claims-v2-openapi.json",
+   "openapi/_original/va-gov-benefits-documents-v1-openapi.json",
+   "openapi/_original/va-gov-benefits-intake-v1-openapi.json",
+   "openapi/_original/va-gov-benefits-reference-data-v1-openapi.json",
+   "openapi/_original/va-gov-community-care-eligibility-v0-openapi.json",
+   "openapi/_original/va-gov-direct-deposit-management-v1-openapi.json",
+   "openapi/_original/va-gov-facilities-v0-openapi.json",
+   "openapi/_original/va-gov-facilities-v1-openapi.json",
+   "openapi/_original/va-gov-forms-v0-openapi.json",
+   "openapi/_original/va-gov-legacy-appeals-v0-openapi.json",
+   "openapi/_original/va-gov-loan-review-v1-openapi.json",
+   "openapi/_original/va-gov-va-letter-generator-v1-openapi.json",
+   "openapi/_original/va-gov-veteran-confirmation-v0-openapi.json",
+   "openapi/_original/va-gov-veteran-confirmation-v1-openapi.json",
+   "openapi/_original/va-gov-veteran-verification-v0-openapi.json",
+   "openapi/_original/va-gov-veteran-verification-v1-openapi.json",
+   "openapi/_original/va-gov-veteran-verification-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "validic",
+  "specs": [
+   "openapi/_original/validic-inform-data-resources-openapi.json",
+   "openapi/_original/validic-streaming-resources-openapi.json"
+  ]
+ },
+ {
+  "slug": "varian-medical-systems",
+  "specs": [
+   "openapi/_original/varian-aria-fhir-openapi.yml"
+  ]
+ },
+ {
+  "slug": "veeva",
+  "specs": [
+   "openapi/_original/veeva-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "verato",
+  "specs": [
+   "openapi/_original/verato-organization-openapi.yml",
+   "openapi/_original/verato-person-openapi.yml",
+   "openapi/_original/verato-provider-openapi.yml"
+  ]
+ },
+ {
+  "slug": "verifiable",
+  "specs": [
+   "openapi/_original/verifiable-openapi-deprecated.json",
+   "openapi/_original/verifiable-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "vim",
+  "specs": [
+   "openapi/_original/vim-data-source-openapi-original.json",
+   "openapi/_original/vim-rest-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "virtuosis-voice-biomarker-api",
+  "specs": [
+   "openapi/_original/virtuosis-voice-biomarker-api-openapi.yml",
+   "openapi/_original/virtuosis-voice-biomarker-api-v1-2-openapi.json",
+   "openapi/_original/virtuosis-voice-biomarker-api-v1-2-openapi.yaml",
+   "openapi/_original/virtuosis-voice-biomarker-api-v1-3-openapi.json",
+   "openapi/_original/virtuosis-voice-biomarker-api-v1-3-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "vitagroup",
+  "specs": [
+   "openapi/_original/vitagroup-ehrbase-sandbox-live.json",
+   "openapi/_original/vitagroup-hip-ehrbase-admin.json",
+   "openapi/_original/vitagroup-hip-ehrbase-enterprise.yml",
+   "openapi/_original/vitagroup-hip-ehrbase-item-tags.json",
+   "openapi/_original/vitagroup-hip-ehrbase-openehr.json"
+  ]
+ },
+ {
+  "slug": "vital-io",
+  "specs": [
+   "openapi/_original/junction-openapi-live-2026-10-12.json",
+   "openapi/_original/vital-lab-report-parser-api-openapi.yml",
+   "openapi/_original/vital-lab-testing-api-openapi.yml",
+   "openapi/_original/vital-link-api-openapi.yml",
+   "openapi/_original/vital-openapi-original.json",
+   "openapi/_original/vital-openapi-original.yml",
+   "openapi/_original/vital-sense-api-openapi.yml",
+   "openapi/_original/vital-team-api-openapi.yml",
+   "openapi/_original/vital-users-api-openapi.yml",
+   "openapi/_original/vital-wearables-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vivalink",
+  "specs": [
+   "openapi/_original/vivalink-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vynedental",
+  "specs": [
+   "openapi/_original/vynedental-onederful-swagger.json"
+  ]
+ },
+ {
+  "slug": "walgreens",
+  "specs": [
+   "openapi/_original/walgreens-prescription-refill-openapi.yml",
+   "openapi/_original/walgreens-store-locator-openapi.yml",
+   "openapi/_original/walgreens-vaccine-scheduling-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weave",
+  "specs": [
+   "openapi/_original/weave-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wefitter",
+  "specs": [
+   "openapi/_original/wefitter-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "xcures",
+  "specs": [
+   "openapi/_original/xcures-api-current.json"
+  ]
+ },
+ {
+  "slug": "xrhealth",
+  "specs": [
+   "openapi/_original/xrhealth-openapi.json",
+   "openapi/_original/xrhealth-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yuzu-health",
+  "specs": [
+   "openapi/_original/yuzu-health-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "znanylekarz",
+  "specs": [
+   "openapi/_original/znanylekarz-integrations-api-openapi.json",
+   "openapi/_original/znanylekarz-integrations-api.yml"
+  ]
+ },
+ {
+  "slug": "zocdoc",
+  "specs": [
+   "openapi/_original/zocdoc-zocdoc-api-openapi.yml"
+  ]
+ }
+]

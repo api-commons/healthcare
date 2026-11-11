@@ -1,0 +1,37 @@
+provider: va
+apis_io: https://apis.io/providers/va/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/medical_records/patient
+  observation:
+    path_segment:
+    - vitals
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/medical_records/vitals
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/medical_records/vitals/{id}
+  condition:
+    path_segment:
+    - conditions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/medical_records/conditions
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/medical_records/conditions/{id}
+  prescription:
+    path_segment:
+    - prescriptions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/prescriptions
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v1/prescriptions/{id}
+    - openapi/_original/va-patient-health-openapi.yaml#GET /v2/prescriptions

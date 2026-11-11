@@ -1,0 +1,17 @@
+provider: particle-health
+apis_io: https://apis.io/providers/particle-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    - patient
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/particle-health-openapi.yml#DELETE /api/v2/patients/{id}
+    - openapi/_original/particle-health-openapi.yml#GET /api/v1/documents/patient/{id}
+    - openapi/_original/particle-health-openapi.yml#GET /api/v2/patients
+    - openapi/_original/particle-health-openapi.yml#GET /api/v2/patients/{id}
+    - openapi/_original/particle-health-openapi.yml#GET /hl7v2/patient/{particle_patient_id}

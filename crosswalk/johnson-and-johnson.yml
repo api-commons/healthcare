@@ -1,0 +1,12 @@
+provider: johnson-and-johnson
+apis_io: https://apis.io/providers/johnson-and-johnson/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/johnson-and-johnson-lifescan-api-openapi.yml#GET /patients

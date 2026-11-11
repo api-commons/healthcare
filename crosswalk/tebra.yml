@@ -1,0 +1,59 @@
+provider: tebra
+apis_io: https://apis.io/providers/tebra/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth: dateOfBirth
+      gender: gender
+      id: id
+      first_name: firstName
+      last_name: lastName
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/tebra-clinical-openapi.yml#GET /patient
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /Patient
+  practitioner:
+    path_segment:
+    - practitioner
+    properties:
+      code: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /Practitioner
+  encounter:
+    path_segment:
+    - encounter
+    properties:
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tebra-clinical-openapi.yml#GET /patient/encounter
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /Encounter
+  observation:
+    path_segment:
+    - observation
+    properties:
+      code: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /Observation
+  condition:
+    path_segment:
+    - condition
+    properties:
+      code: type
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /Condition
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties:
+      code: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tebra-fhir-api-openapi.yml#GET /MedicationRequest

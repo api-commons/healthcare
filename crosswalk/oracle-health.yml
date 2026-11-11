@@ -1,0 +1,117 @@
+provider: oracle-health
+apis_io: https://apis.io/providers/oracle-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      id: id
+    core_coverage: 0.167
+    evidence:
+    - openapi/_original/cerner-patient-api-openapi.yml#GET /Patient
+    - openapi/_original/cerner-patient-api-openapi.yml#GET /Patient/{id}
+    - openapi/_original/cerner-patient-api-openapi.yml#PATCH /Patient/{id}
+    - openapi/_original/cerner-patient-api-openapi.yml#POST /Patient
+    - openapi/_original/oracle-health-patient-api-openapi.yml#GET /Patient
+  practitioner:
+    path_segment:
+    - practitioner
+    properties:
+      id: id
+      code: type
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/cerner-practitioner-api-openapi.yml#GET /Practitioner
+    - openapi/_original/cerner-practitioner-api-openapi.yml#GET /Practitioner/{id}
+    - openapi/_original/cerner-practitioner-api-openapi.yml#POST /Practitioner
+    - openapi/_original/oracle-health-practitioner-api-openapi.yml#GET /Practitioner
+    - openapi/_original/oracle-health-practitioner-api-openapi.yml#GET /Practitioner/{id}
+  encounter:
+    path_segment:
+    - encounter
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cerner-encounter-api-openapi.yml#GET /Encounter
+    - openapi/_original/cerner-encounter-api-openapi.yml#GET /Encounter/{id}
+    - openapi/_original/cerner-encounter-api-openapi.yml#PATCH /Encounter/{id}
+    - openapi/_original/cerner-encounter-api-openapi.yml#POST /Encounter
+    - openapi/_original/oracle-health-encounter-api-openapi.yml#GET /Encounter
+  observation:
+    path_segment:
+    - observation
+    properties:
+      code: type
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cerner-observation-api-openapi.yml#GET /Observation
+    - openapi/_original/cerner-observation-api-openapi.yml#GET /Observation/{id}
+    - openapi/_original/cerner-observation-api-openapi.yml#POST /Observation
+    - openapi/_original/cerner-observation-api-openapi.yml#PUT /Observation/{id}
+    - openapi/_original/oracle-health-observation-api-openapi.yml#GET /Observation
+  condition:
+    path_segment:
+    - condition
+    properties:
+      code: type
+      id: id
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/cerner-condition-api-openapi.yml#GET /Condition
+    - openapi/_original/cerner-condition-api-openapi.yml#GET /Condition/{id}
+    - openapi/_original/cerner-condition-api-openapi.yml#POST /Condition
+    - openapi/_original/cerner-condition-api-openapi.yml#PUT /Condition/{id}
+    - openapi/_original/oracle-health-condition-api-openapi.yml#GET /Condition
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties:
+      id: id
+      code: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cerner-medication-request-api-openapi.yml#GET /MedicationRequest
+    - openapi/_original/cerner-medication-request-api-openapi.yml#GET /MedicationRequest/{id}
+    - openapi/_original/cerner-medication-request-api-openapi.yml#PATCH /MedicationRequest/{id}
+    - openapi/_original/cerner-medication-request-api-openapi.yml#POST /MedicationRequest
+    - openapi/_original/oracle-health-medication-request-api-openapi.yml#GET /MedicationRequest
+  coverage:
+    path_segment:
+    - coverage
+    properties:
+      id: id
+      code: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/cerner-coverage-api-openapi.yml#DELETE /Coverage/{id}
+    - openapi/_original/cerner-coverage-api-openapi.yml#GET /Coverage
+    - openapi/_original/cerner-coverage-api-openapi.yml#GET /Coverage/{id}
+    - openapi/_original/cerner-coverage-api-openapi.yml#PATCH /Coverage/{id}
+    - openapi/_original/cerner-coverage-api-openapi.yml#POST /Coverage
+  health_claim:
+    path_segment:
+    - explanationofbenefit
+    - claim
+    properties:
+      id:
+      - id
+      - identifier
+      status: status
+      code: type
+      patient_id: patient
+      payer: insurer
+      practitioner_id: provider
+      service_date: billablePeriod
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/ExplanationOfBenefit
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-sandbox-swagger.yml#GET /patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-swagger.yml#GET /patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-sandbox-swagger.yml#GET /patientaccess/ExplanationOfBenefit
+    shared_spec: hl7-fhir

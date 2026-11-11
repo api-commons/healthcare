@@ -1,0 +1,66 @@
+aid: common-healthcare
+name: Healthcare
+type: Common
+description: 'The common Healthcare vocabulary, distilled from the harvested OpenAPI of 259 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Healthcare
+- Digital Health
+- Telehealth
+- Health Tech
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/healthcare/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-healthcare:healthcare
+  name: Common Healthcare Interface
+  description: The Healthcare interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/healthcare
+  tags:
+  - Healthcare
+  - Digital Health
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: patient
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/patient.json
+  - type: JSONSchema
+    name: practitioner
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/practitioner.json
+  - type: JSONSchema
+    name: encounter
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/encounter.json
+  - type: JSONSchema
+    name: observation
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/observation.json
+  - type: JSONSchema
+    name: condition
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/condition.json
+  - type: JSONSchema
+    name: prescription
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/prescription.json
+  - type: JSONSchema
+    name: coverage
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/coverage.json
+  - type: JSONSchema
+    name: health_claim
+    url: https://raw.githubusercontent.com/api-commons/healthcare/main/schema/health_claim.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/healthcare/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,91 @@
+provider: centene
+apis_io: https://apis.io/providers/centene/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Patient
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Patient/{id}
+  practitioner:
+    path_segment:
+    - practitioner
+    - provider
+    properties:
+      id:
+      - id
+      - identifier
+      last_name: lastName
+      first_name: firstName
+      npi: npi
+      specialty:
+      - specialties
+      - specialty
+      - qualification
+      name: name
+      email: email
+      active: active
+      code: type
+      address: address
+      description: text
+      gender: gender
+      middle_name: middleName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Practitioner
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Practitioner/{id}
+    - openapi/_original/centene-fhir-provider-directory-openapi.json#GET /Practitioner
+    - openapi/_original/centene-fhir-provider-directory-openapi.json#GET /Practitioner/{id}
+    - openapi/_original/centene-provider-rtr-demographics-openapi.json#GET /provRTR/v2/practitioner
+  encounter:
+    path_segment:
+    - encounter
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Encounter
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Encounter/{id}
+  observation:
+    path_segment:
+    - observation
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Observation
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Observation/{id}
+  condition:
+    path_segment:
+    - condition
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Condition
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Condition/{id}
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /MedicationRequest
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /MedicationRequest/{id}
+  coverage:
+    path_segment:
+    - coverage
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Coverage
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /Coverage/{id}
+  health_claim:
+    path_segment:
+    - explanationofbenefit
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /ExplanationOfBenefit
+    - openapi/_original/centene-fhir-patient-access-openapi.json#GET /ExplanationOfBenefit/{id}

@@ -1,0 +1,40 @@
+provider: jane-app
+apis_io: https://apis.io/providers/jane-app/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: date_of_birth
+      gender:
+      - sex
+      - gender
+      id: id
+      first_name: first_name
+      last_name: last_name
+      email: email
+      status: status
+      city: city
+      middle_name: middle_name
+      pronouns: pronouns
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jane-app-jdp-openapi.yml#GET /api/2026-01-01/patients
+    - openapi/_original/jane-app-jdp-openapi.yml#GET /api/2026-01-01/patients/{patient_id}
+  observation:
+    path_segment:
+    - observations
+    properties:
+      id: id
+      patient_id: patient_id
+      category: category
+      description: note
+      encounter_id: encounter_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/jane-app-jdp-openapi.yml#GET /api/2026-01-01/medical-record/observations
+    - openapi/_original/jane-app-jdp-openapi.yml#GET /api/2026-01-01/medical-record/observations/{observation_id}
+    - openapi/_original/jane-app-jdp-openapi.yml#PATCH /api/2026-01-01/medical-record/observations/{observation_id}
+    - openapi/_original/jane-app-jdp-openapi.yml#POST /api/2026-01-01/medical-record/observations

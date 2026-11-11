@@ -1,0 +1,20 @@
+provider: medblocks
+apis_io: https://apis.io/providers/medblocks/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      id: id
+      email: email
+      created_at: created_at
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/medblocks-platform-openapi.json#DELETE /patients/{id}
+    - openapi/_original/medblocks-platform-openapi.json#GET /patients
+    - openapi/_original/medblocks-platform-openapi.json#GET /patients/{id}
+    - openapi/_original/medblocks-platform-openapi.json#POST /patients
+    - openapi/_original/medblocks-platform-openapi.json#PUT /patients/{id}

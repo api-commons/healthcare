@@ -1,0 +1,36 @@
+provider: diagnostic-robotics
+apis_io: https://apis.io/providers/diagnostic-robotics/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      gender: sex
+    core_coverage: 0.167
+    evidence:
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#GET /v2/patients/{patient_id}
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#POST /v2/patients/
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.yml#GET /v2/patients/{patient_id}
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.yml#POST /v2/patients/
+  encounter:
+    path_segment:
+    - visits
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#GET /v2/patients/{patient_id}/visits
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#GET /v2/visits/{visit_id}/
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#PATCH /v2/visits/{visit_id}/
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.json#POST /v2/patients/{patient_id}/visits
+    - openapi/_original/diagnostic-robotics-patient-questionnaire-openapi.yml#GET /v2/patients/{patient_id}/visits
+  condition:
+    path_segment:
+    - diagnoses
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/diagnostic-robotics-precision-population-health-openapi.json#PATCH /api/v2/RiskAdjustmentProfile/{patientId}/diagnoses
+    - openapi/_original/diagnostic-robotics-precision-population-health-openapi.yml#PATCH /api/v2/RiskAdjustmentProfile/{patientId}/diagnoses

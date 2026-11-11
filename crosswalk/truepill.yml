@@ -1,0 +1,51 @@
+provider: truepill
+apis_io: https://apis.io/providers/truepill/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth: dob
+      gender: gender
+      first_name: first_name
+      last_name: last_name
+      email: email
+      address: address
+      status:
+      - state
+      - status
+      city: city
+      description: details
+      phone: phone
+      ssn: ssn
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/auto-refill/patient/{patient_token}
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/patient
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/patient/{patient_token}
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/auto-refill/patient/{patient_token}
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/patient
+  prescription:
+    path_segment:
+    - prescription
+    - prescriptions
+    properties:
+      medication: medication_name
+      description: notes
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/patient/{patient_token}/prescriptions
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/prescription/{token}
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/patient/{patient_token}/prescriptions
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/prescription/{token}
+  health_claim:
+    path_segment:
+    - claims
+    properties:
+      payer: payor
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/prescription/{prescription_token}/fill/{fill_number}/claims
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/prescription/{prescription_token}/fill/{fill_number}/claims

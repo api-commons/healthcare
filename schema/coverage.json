@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/healthcare/main/schema/coverage.json",
+  "title": "Coverage",
+  "description": "The common coverage in Healthcare, distilled from 8 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.75,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "id",
+        "identifier"
+      ]
+    },
+    "code": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type",
+        "codes"
+      ]
+    },
+    "patient_id": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "beneficiary",
+        "patient",
+        "patient_id"
+      ]
+    },
+    "payer": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "payor",
+        "payer_id"
+      ]
+    },
+    "relationship": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "relationship"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "member_number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "subscriberId"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "period"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "healthcare",
+    "concept": "coverage",
+    "providers": 8,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

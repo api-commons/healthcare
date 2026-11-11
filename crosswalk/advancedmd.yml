@@ -1,0 +1,133 @@
+provider: advancedmd
+apis_io: https://apis.io/providers/advancedmd/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    - patients
+    properties:
+      date_of_birth: dob
+      gender:
+      - sex
+      - gender
+      id:
+      - id
+      - identifier
+      address: address
+      name: name
+      description: text
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/advancedmd-application-access-apis-swagger.json#GET /demographics/patients/{patientid}
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Patient
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Patient/{id}
+  practitioner:
+    path_segment:
+    - practitioner
+    - providers
+    properties:
+      id:
+      - id
+      - identifier
+      last_name: lastName
+      first_name: firstName
+      npi: npiNumber
+      specialty: qualification
+      name:
+      - title
+      - name
+      active: active
+      address: address
+      description: text
+      middle_name: middleName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-application-access-apis-swagger.json#GET /clinical/providers
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Practitioner
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Practitioner/{id}
+  encounter:
+    path_segment:
+    - encounter
+    properties:
+      id: id
+      status: status
+      type: class
+      patient_id: subject
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Encounter
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Encounter/{id}
+  observation:
+    path_segment:
+    - observation
+    properties:
+      code: code
+      id: id
+      patient_id: subject
+      category: category
+      description: text
+      encounter_id: encounter
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Observation
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Observation/{id}
+  condition:
+    path_segment:
+    - condition
+    - problems
+    properties:
+      code:
+      - code
+      - codeSystem
+      id: id
+      status:
+      - status
+      - clinicalStatus
+      - verificationStatus
+      description:
+      - description
+      - text
+      patient_id: subject
+      onset_at: onsetDateTime
+      category: category
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-application-access-apis-swagger.json#GET /clinical/problems
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Condition
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Condition/{id}
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties:
+      dosage: dosageInstruction
+      id:
+      - id
+      - identifier
+      status: status
+      description: text
+      patient_id: subject
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /MedicationRequest
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /MedicationRequest/{id}
+  coverage:
+    path_segment:
+    - coverage
+    properties:
+      id:
+      - id
+      - identifier
+      code: type
+      patient_id: beneficiary
+      payer: payor
+      relationship: relationship
+      status: status
+      member_number: subscriberId
+      period: period
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Coverage
+    - openapi/_original/advancedmd-fhir-single-api-openapi.json#GET /Coverage/{id}

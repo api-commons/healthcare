@@ -1,0 +1,193 @@
+provider: cms-blue-button
+apis_io: https://apis.io/providers/cms-blue-button/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth:
+      - birthDate
+      - birthdate
+      gender: gender
+      id:
+      - id
+      - identifier
+      email: telecom
+      address: address
+      name: name
+      description: text
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Patient
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Patient/{id}
+    - openapi/_original/aetna-v2-patientaccess-Patient-id-sandbox-swagger.yml#GET /patientaccess/Patient/{id}
+    - openapi/_original/aetna-v2-patientaccess-Patient-id-swagger.yml#GET /patientaccess/Patient/{id}
+    - openapi/_original/aetna-v2-patientaccess-Patient-sandbox-swagger.yml#GET /patientaccess/Patient
+    shared_spec: hl7-fhir
+  practitioner:
+    path_segment:
+    - practitioner
+    properties:
+      id:
+      - id
+      - identifier
+      specialty: qualification
+      name: name
+      active: active
+      code: type
+      address: address
+      description: text
+      gender: gender
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Practitioner/{id}
+    - openapi/_original/aetna-v1-providerdirectory-Practitioner-id-swagger.yml#GET /Practitioner/{id}
+    - openapi/_original/aetna-v1-providerdirectory-Practitioner-swagger.yml#GET /Practitioner
+    - openapi/_original/aetna-v1-providerdirectorydata-Practitioner-swagger.yml#GET /Practitioner
+    - openapi/_original/aetna-v1-providerdirectorydata-Practitioner-swagger.yml#GET /Practitioner/{id}
+    shared_spec: hl7-fhir
+  encounter:
+    path_segment:
+    - encounter
+    properties:
+      id:
+      - id
+      - identifier
+      status: status
+      type:
+      - type
+      - class
+      patient_id:
+      - subject
+      - patient
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Encounter
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Encounter/{id}
+    - openapi/_original/aetna-v2-patientaccess-Encounter-id-sandbox-swagger.yml#GET /patientaccess/Encounter/{id}
+    - openapi/_original/aetna-v2-patientaccess-Encounter-id-swagger.yml#GET /patientaccess/Encounter/{id}
+    - openapi/_original/aetna-v2-patientaccess-Encounter-sandbox-swagger.yml#GET /patientaccess/Encounter
+    shared_spec: hl7-fhir
+  observation:
+    path_segment:
+    - observation
+    properties:
+      code:
+      - type
+      - code
+      id:
+      - id
+      - identifier
+      patient_id: subject
+      category: category
+      description:
+      - text
+      - note
+      encounter_id: encounter
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Observation
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Observation/{id}
+    - openapi/_original/aetna-v2-patientaccess-Observation-id-sandbox-swagger.yml#GET /patientaccess/Observation/{id}
+    - openapi/_original/aetna-v2-patientaccess-Observation-id-swagger.yml#GET /patientaccess/Observation/{id}
+    - openapi/_original/aetna-v2-patientaccess-Observation-sandbox-swagger.yml#GET /patientaccess/Observation
+    shared_spec: hl7-fhir
+  condition:
+    path_segment:
+    - condition
+    properties:
+      code:
+      - type
+      - code
+      id:
+      - id
+      - identifier
+      status:
+      - clinicalStatus
+      - verificationStatus
+      description:
+      - text
+      - note
+      patient_id:
+      - subject
+      - patient
+      onset_at: onsetDateTime
+      category: category
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Condition
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Condition/{id}
+    - openapi/_original/aetna-v2-patientaccess-Condition-id-sandbox-swagger.yml#GET /patientaccess/Condition/{id}
+    - openapi/_original/aetna-v2-patientaccess-Condition-id-swagger.yml#GET /patientaccess/Condition/{id}
+    - openapi/_original/aetna-v2-patientaccess-Condition-sandbox-swagger.yml#GET /patientaccess/Condition
+    shared_spec: hl7-fhir
+  prescription:
+    path_segment:
+    - medicationrequest
+    properties:
+      dosage: dosageInstruction
+      id:
+      - id
+      - identifier
+      code: type
+      medication: medicationCodeableConcept
+      status: status
+      description:
+      - text
+      - note
+      patient_id: subject
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/MedicationRequest
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/MedicationRequest/{id}
+    - openapi/_original/aetna-v2-patientaccess-MedicationRequest-id-sandbox-swagger.yml#GET /patientaccess/MedicationRequest/{id}
+    - openapi/_original/aetna-v2-patientaccess-MedicationRequest-id-swagger.yml#GET /patientaccess/MedicationRequest/{id}
+    - openapi/_original/aetna-v2-patientaccess-MedicationRequest-sandbox-swagger.yml#GET /patientaccess/MedicationRequest
+    shared_spec: hl7-fhir
+  coverage:
+    path_segment:
+    - coverage
+    properties:
+      id:
+      - id
+      - identifier
+      code: type
+      patient_id: beneficiary
+      payer: payor
+      relationship: relationship
+      status: status
+      member_number: subscriberId
+      period: period
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/Coverage
+    - openapi/_original/aetna-v2-patientaccess-Coverage-id-swagger.yml#GET /patientaccess/Coverage/{id}
+    - openapi/_original/aetna-v2-patientaccess-Coverage-sandbox-swagger.yml#GET /patientaccess/Coverage
+    - openapi/_original/aetna-v2-patientaccess-Coverage-swagger.yml#GET /patientaccess/Coverage
+    - openapi/_original/amerihealth-caritas-patient-access-openapi.yml#DELETE /Coverage/{id}
+    shared_spec: hl7-fhir
+  health_claim:
+    path_segment:
+    - explanationofbenefit
+    - claim
+    properties:
+      id:
+      - id
+      - identifier
+      status: status
+      code: type
+      patient_id: patient
+      payer: insurer
+      practitioner_id: provider
+      service_date: billablePeriod
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/ExplanationOfBenefit
+    - openapi/_original/aetna-patient-access-api-sandbox-openapi.yml#GET /v2/patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-sandbox-swagger.yml#GET /patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-id-swagger.yml#GET /patientaccess/ExplanationOfBenefit/{id}
+    - openapi/_original/aetna-v2-patientaccess-ExplanationOfBenefit-sandbox-swagger.yml#GET /patientaccess/ExplanationOfBenefit
+    shared_spec: hl7-fhir

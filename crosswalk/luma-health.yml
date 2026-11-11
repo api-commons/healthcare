@@ -1,0 +1,56 @@
+provider: luma-health
+apis_io: https://apis.io/providers/luma-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: dateOfBirth
+      gender: gender
+      id:
+      - _id
+      - externalId
+      first_name: firstname
+      last_name: lastname
+      email: email
+      address: address
+      status: state
+      created_at: createdAt
+      name: name
+      city: city
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/luma-health-openapi.yaml#DELETE /patients/{patientId}
+    - openapi/_original/luma-health-openapi.yaml#GET /patients
+    - openapi/_original/luma-health-openapi.yaml#GET /patients/{patientId}
+    - openapi/_original/luma-health-openapi.yaml#POST /patients
+    - openapi/_original/luma-health-openapi.yaml#PUT /patients/{patientId}
+  practitioner:
+    path_segment:
+    - providers
+    properties:
+      id:
+      - _id
+      - externalId
+      last_name: lastname
+      first_name: firstname
+      npi: npi
+      specialty: specialty
+      name: name
+      email: email
+      active: active
+      code: type
+      created_at: createdAt
+      updated_at: updatedAt
+      address: address
+      gender: gender
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/luma-health-openapi.yaml#DELETE /providers/{providerId}
+    - openapi/_original/luma-health-openapi.yaml#DELETE /specialties/{specialtyId}/providers/{providerId}
+    - openapi/_original/luma-health-openapi.yaml#GET /providers
+    - openapi/_original/luma-health-openapi.yaml#GET /providers/{providerId}
+    - openapi/_original/luma-health-openapi.yaml#GET /specialties/{specialtyId}/providers

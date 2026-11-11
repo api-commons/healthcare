@@ -1,0 +1,52 @@
+provider: pointclickcare
+apis_io: https://apis.io/providers/pointclickcare/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: dateOfBirth
+      gender: gender
+      first_name: firstName
+      last_name: lastName
+      status: status
+      middle_name: middleName
+      ssn: ssn
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients
+    - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients/{patientId}
+  observation:
+    path_segment:
+    - vitals
+    properties:
+      patient_id: patientId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients/{patientId}/vitals
+  condition:
+    path_segment:
+    - diagnoses
+    properties:
+      status: status
+      description: description
+      patient_id: patientId
+      onset_at: onsetDate
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients/{patientId}/diagnoses
+  prescription:
+    path_segment:
+    - medications
+    properties:
+      dosage: dose
+      medication:
+      - medicationName
+      - ndc
+      status: status
+      patient_id: patientId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/pointclickcare-ehr-openapi.yml#GET /patients/{patientId}/medications

@@ -1,0 +1,654 @@
+context: healthcare
+generated: '2026-11-10'
+adopters:
+- provider: advancedmd
+  apis_io: https://apis.io/providers/advancedmd/
+  crosswalk: crosswalk/advancedmd.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: aetna
+  apis_io: https://apis.io/providers/aetna/
+  crosswalk: crosswalk/aetna.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: akute
+  apis_io: https://apis.io/providers/akute/
+  crosswalk: crosswalk/akute.yml
+  concepts:
+  - observation
+  - patient
+- provider: amerihealth-caritas
+  apis_io: https://apis.io/providers/amerihealth-caritas/
+  crosswalk: crosswalk/amerihealth-caritas.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: amigo
+  apis_io: https://apis.io/providers/amigo/
+  crosswalk: crosswalk/amigo.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: aristamd
+  apis_io: https://apis.io/providers/aristamd/
+  crosswalk: crosswalk/aristamd.yml
+  concepts:
+  - patient
+- provider: athelas
+  apis_io: https://apis.io/providers/athelas/
+  crosswalk: crosswalk/athelas.yml
+  concepts:
+  - patient
+- provider: athenahealth
+  apis_io: https://apis.io/providers/athenahealth/
+  crosswalk: crosswalk/athenahealth.yml
+  concepts:
+  - condition
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: candid-health
+  apis_io: https://apis.io/providers/candid-health/
+  crosswalk: crosswalk/candid-health.yml
+  concepts:
+  - encounter
+  - patient
+  - practitioner
+- provider: canvas-medical
+  apis_io: https://apis.io/providers/canvas-medical/
+  crosswalk: crosswalk/canvas-medical.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: centene
+  apis_io: https://apis.io/providers/centene/
+  crosswalk: crosswalk/centene.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: charmhealth
+  apis_io: https://apis.io/providers/charmhealth/
+  crosswalk: crosswalk/charmhealth.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: childrens-hospital-of-philadelphia
+  apis_io: https://apis.io/providers/childrens-hospital-of-philadelphia/
+  crosswalk: crosswalk/childrens-hospital-of-philadelphia.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: cigna
+  apis_io: https://apis.io/providers/cigna/
+  crosswalk: crosswalk/cigna.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: clevercarehealthplan
+  apis_io: https://apis.io/providers/clevercarehealthplan/
+  crosswalk: crosswalk/clevercarehealthplan.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: cliniko
+  apis_io: https://apis.io/providers/cliniko/
+  crosswalk: crosswalk/cliniko.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: clover-health
+  apis_io: https://apis.io/providers/clover-health/
+  crosswalk: crosswalk/clover-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: cms-blue-button
+  apis_io: https://apis.io/providers/cms-blue-button/
+  crosswalk: crosswalk/cms-blue-button.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: cms-gov
+  apis_io: https://apis.io/providers/cms-gov/
+  crosswalk: crosswalk/cms-gov.yml
+  concepts:
+  - coverage
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+- provider: collectly
+  apis_io: https://apis.io/providers/collectly/
+  crosswalk: crosswalk/collectly.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: community-health-systems
+  apis_io: https://apis.io/providers/community-health-systems/
+  crosswalk: crosswalk/community-health-systems.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: department-of-veterans-affairs
+  apis_io: https://apis.io/providers/department-of-veterans-affairs/
+  crosswalk: crosswalk/department-of-veterans-affairs.yml
+  concepts:
+  - condition
+  - health_claim
+  - observation
+  - patient
+  - prescription
+- provider: devoted-health
+  apis_io: https://apis.io/providers/devoted-health/
+  crosswalk: crosswalk/devoted-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: diagnostic-robotics
+  apis_io: https://apis.io/providers/diagnostic-robotics/
+  crosswalk: crosswalk/diagnostic-robotics.yml
+  concepts:
+  - condition
+  - encounter
+  - patient
+- provider: dosespot
+  apis_io: https://apis.io/providers/dosespot/
+  crosswalk: crosswalk/dosespot.yml
+  concepts:
+  - patient
+  - practitioner
+  - prescription
+- provider: drchrono
+  apis_io: https://apis.io/providers/drchrono/
+  crosswalk: crosswalk/drchrono.yml
+  concepts:
+  - condition
+  - coverage
+  - observation
+  - patient
+  - practitioner
+- provider: eden-health
+  apis_io: https://apis.io/providers/eden-health/
+  crosswalk: crosswalk/eden-health.yml
+  concepts:
+  - coverage
+  - encounter
+  - patient
+  - prescription
+- provider: elation-health
+  apis_io: https://apis.io/providers/elation-health/
+  crosswalk: crosswalk/elation-health.yml
+  concepts:
+  - condition
+  - coverage
+  - observation
+  - patient
+  - practitioner
+- provider: elevance-health
+  apis_io: https://apis.io/providers/elevance-health/
+  crosswalk: crosswalk/elevance-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: fhir
+  apis_io: https://apis.io/providers/fhir/
+  crosswalk: crosswalk/fhir.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: flexpa
+  apis_io: https://apis.io/providers/flexpa/
+  crosswalk: crosswalk/flexpa.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: gp-connect
+  apis_io: https://apis.io/providers/gp-connect/
+  crosswalk: crosswalk/gp-connect.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: health-gorilla
+  apis_io: https://apis.io/providers/health-gorilla/
+  crosswalk: crosswalk/health-gorilla.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: hint-health
+  apis_io: https://apis.io/providers/hint-health/
+  crosswalk: crosswalk/hint-health.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: hl7-fhir
+  apis_io: https://apis.io/providers/hl7-fhir/
+  crosswalk: crosswalk/hl7-fhir.yml
+  concepts:
+  - condition
+  - encounter
+  - observation
+  - patient
+  - prescription
+- provider: huma
+  apis_io: https://apis.io/providers/huma/
+  crosswalk: crosswalk/huma.yml
+  concepts:
+  - patient
+  - prescription
+- provider: independence-blue-cross
+  apis_io: https://apis.io/providers/independence-blue-cross/
+  crosswalk: crosswalk/independence-blue-cross.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: jane-app
+  apis_io: https://apis.io/providers/jane-app/
+  crosswalk: crosswalk/jane-app.yml
+  concepts:
+  - observation
+  - patient
+- provider: jefferson-health
+  apis_io: https://apis.io/providers/jefferson-health/
+  crosswalk: crosswalk/jefferson-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: johnson-and-johnson
+  apis_io: https://apis.io/providers/johnson-and-johnson/
+  crosswalk: crosswalk/johnson-and-johnson.yml
+  concepts:
+  - patient
+- provider: lifen
+  apis_io: https://apis.io/providers/lifen/
+  crosswalk: crosswalk/lifen.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: luma-health
+  apis_io: https://apis.io/providers/luma-health/
+  crosswalk: crosswalk/luma-health.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: medblocks
+  apis_io: https://apis.io/providers/medblocks/
+  crosswalk: crosswalk/medblocks.yml
+  concepts:
+  - patient
+- provider: meditech
+  apis_io: https://apis.io/providers/meditech/
+  crosswalk: crosswalk/meditech.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: metriport
+  apis_io: https://apis.io/providers/metriport/
+  crosswalk: crosswalk/metriport.yml
+  concepts:
+  - patient
+- provider: modernizing-medicine
+  apis_io: https://apis.io/providers/modernizing-medicine/
+  crosswalk: crosswalk/modernizing-medicine.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: nexhealth
+  apis_io: https://apis.io/providers/nexhealth/
+  crosswalk: crosswalk/nexhealth.yml
+  concepts:
+  - health_claim
+  - patient
+  - practitioner
+- provider: nextgen-healthcare
+  apis_io: https://apis.io/providers/nextgen-healthcare/
+  crosswalk: crosswalk/nextgen-healthcare.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: nhs-api
+  apis_io: https://apis.io/providers/nhs-api/
+  crosswalk: crosswalk/nhs-api.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: nhs-england
+  apis_io: https://apis.io/providers/nhs-england/
+  crosswalk: crosswalk/nhs-england.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: opendental
+  apis_io: https://apis.io/providers/opendental/
+  crosswalk: crosswalk/opendental.yml
+  concepts:
+  - health_claim
+  - patient
+  - practitioner
+- provider: oracle-health
+  apis_io: https://apis.io/providers/oracle-health/
+  crosswalk: crosswalk/oracle-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: particle-health
+  apis_io: https://apis.io/providers/particle-health/
+  crosswalk: crosswalk/particle-health.yml
+  concepts:
+  - patient
+- provider: penn-medicine
+  apis_io: https://apis.io/providers/penn-medicine/
+  crosswalk: crosswalk/penn-medicine.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: pointclickcare
+  apis_io: https://apis.io/providers/pointclickcare/
+  crosswalk: crosswalk/pointclickcare.yml
+  concepts:
+  - condition
+  - observation
+  - patient
+  - prescription
+- provider: ritten
+  apis_io: https://apis.io/providers/ritten/
+  crosswalk: crosswalk/ritten.yml
+  concepts:
+  - encounter
+  - observation
+  - patient
+- provider: silna
+  apis_io: https://apis.io/providers/silna/
+  crosswalk: crosswalk/silna.yml
+  concepts:
+  - patient
+  - practitioner
+- provider: smarthealthit
+  apis_io: https://apis.io/providers/smarthealthit/
+  crosswalk: crosswalk/smarthealthit.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: sun-life
+  apis_io: https://apis.io/providers/sun-life/
+  crosswalk: crosswalk/sun-life.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: tebra
+  apis_io: https://apis.io/providers/tebra/
+  crosswalk: crosswalk/tebra.yml
+  concepts:
+  - condition
+  - encounter
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: temple-health
+  apis_io: https://apis.io/providers/temple-health/
+  crosswalk: crosswalk/temple-health.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: tenet-healthcare
+  apis_io: https://apis.io/providers/tenet-healthcare/
+  crosswalk: crosswalk/tenet-healthcare.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: truepill
+  apis_io: https://apis.io/providers/truepill/
+  crosswalk: crosswalk/truepill.yml
+  concepts:
+  - health_claim
+  - patient
+  - prescription
+- provider: unitedhealth
+  apis_io: https://apis.io/providers/unitedhealth/
+  crosswalk: crosswalk/unitedhealth.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: unitedhealthcare
+  apis_io: https://apis.io/providers/unitedhealthcare/
+  crosswalk: crosswalk/unitedhealthcare.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: va
+  apis_io: https://apis.io/providers/va/
+  crosswalk: crosswalk/va.yml
+  concepts:
+  - condition
+  - observation
+  - patient
+  - prescription
+- provider: varian-medical-systems
+  apis_io: https://apis.io/providers/varian-medical-systems/
+  crosswalk: crosswalk/varian-medical-systems.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - health_claim
+  - observation
+  - patient
+  - practitioner
+  - prescription
+- provider: xcures
+  apis_io: https://apis.io/providers/xcures/
+  crosswalk: crosswalk/xcures.yml
+  concepts:
+  - condition
+  - coverage
+  - encounter
+  - observation
+  - patient
+- provider: znanylekarz
+  apis_io: https://apis.io/providers/znanylekarz/
+  crosswalk: crosswalk/znanylekarz.yml
+  concepts:
+  - patient
+  - practitioner

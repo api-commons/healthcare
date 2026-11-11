@@ -1,0 +1,23 @@
+provider: metriport
+apis_io: https://apis.io/providers/metriport/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth: dob
+      id:
+      - id
+      - externalId
+      first_name: firstName
+      last_name: lastName
+      address: address
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/metriport-openapi.yml#DELETE /medical/v1/patient/{id}
+    - openapi/_original/metriport-openapi.yml#GET /medical/v1/patient
+    - openapi/_original/metriport-openapi.yml#GET /medical/v1/patient/{id}
+    - openapi/_original/metriport-openapi.yml#POST /medical/v1/patient
+    - openapi/_original/metriport-openapi.yml#PUT /medical/v1/patient/{id}

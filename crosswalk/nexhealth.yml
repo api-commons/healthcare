@@ -1,0 +1,59 @@
+provider: nexhealth
+apis_io: https://apis.io/providers/nexhealth/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      id: id
+      first_name: first_name
+      last_name: last_name
+      email: email
+      address: address
+      created_at: created_at
+      name: name
+      middle_name: middle_name
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/nexhealth-openapi-original.json#GET /patients
+    - openapi/_original/nexhealth-openapi-original.json#GET /patients/{id}
+    - openapi/_original/nexhealth-openapi-original.json#POST /patients
+  practitioner:
+    path_segment:
+    - providers
+    properties:
+      id: id
+      last_name: last_name
+      first_name: first_name
+      npi: npi
+      name:
+      - name
+      - display_name
+      email: email
+      created_at: created_at
+      updated_at: updated_at
+      middle_name: middle_name
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/nexhealth-openapi-original.json#GET /providers
+    - openapi/_original/nexhealth-openapi-original.json#GET /providers/{id}
+  health_claim:
+    path_segment:
+    - claims
+    properties:
+      id: id
+      status: status
+      patient_id:
+      - patient_id
+      - patient
+      practitioner_id:
+      - provider_id
+      - provider
+      service_date: date_of_service
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/nexhealth-openapi-original.json#GET /claims
+    - openapi/_original/nexhealth-openapi-original.json#GET /claims/{id}

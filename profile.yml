@@ -1,0 +1,1298 @@
+context: healthcare
+name: Healthcare
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Healthcare
+  - Digital Health
+  - Telehealth
+  - Health Tech
+  - FHIR
+  - Electronic Health Records
+  - EHR
+  - Health Insurance
+  - Healthtech
+  providers_with_harvested_openapi: 259
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  oracle-health:
+  - cerner
+  cdc:
+  - cdc-gov
+  vitagroup:
+  - ehrbase
+  junction-com:
+  - vital-io
+  nhs-england:
+  - nhs-api
+  - nhs-digital
+  thatch:
+  - thatch-health
+shared_specs:
+  hl7-fhir:
+  - aetna
+  - amerihealth-caritas
+  - canvas-medical
+  - charmhealth
+  - childrens-hospital-of-philadelphia
+  - cigna
+  - clevercarehealthplan
+  - clover-health
+  - cms-blue-button
+  - community-health-systems
+  - devoted-health
+  - elevance-health
+  - fhir
+  - flexpa
+  - gp-connect
+  - health-gorilla
+  - independence-blue-cross
+  - jefferson-health
+  - lifen
+  - meditech
+  - modernizing-medicine
+  - nextgen-healthcare
+  - nhs-api
+  - oracle-health
+  - penn-medicine
+  - smarthealthit
+  - sun-life
+  - temple-health
+  - tenet-healthcare
+  - unitedhealth
+  - unitedhealthcare
+  - varian-medical-systems
+concepts:
+  patient:
+    segments_seen:
+      patients: 25
+      patient: 17
+    providers_exposing: 38
+    providers_with_readable_schema: 29
+    operations:
+    - operation: GET collection
+      providers: 34
+      share: 0.895
+      tier: core
+    - operation: GET item
+      providers: 29
+      share: 0.763
+      tier: core
+    - operation: POST collection
+      providers: 24
+      share: 0.632
+      tier: core
+    - operation: UPDATE item
+      providers: 18
+      share: 0.474
+      tier: extended
+    - operation: DELETE item
+      providers: 9
+      share: 0.237
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.079
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.053
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.026
+      tier: long-tail
+    properties:
+    - name: date_of_birth
+      tier: core
+      providers: 23
+      share: 0.793
+      type: string
+      spellings:
+      - dob
+      - date_of_birth
+      - dateOfBirth
+      - birthDate
+      - birthdate
+      - DateOfBirth
+    - name: gender
+      tier: core
+      providers: 22
+      share: 0.759
+      type: string
+      spellings:
+      - gender
+      - sex
+      - Gender
+    - name: id
+      tier: core
+      providers: 22
+      share: 0.759
+      type: string
+      spellings:
+      - id
+      - identifier
+      - externalId
+      - external_id
+      - Id
+      - _id
+    - name: first_name
+      tier: core
+      providers: 19
+      share: 0.655
+      type: string
+      spellings:
+      - first_name
+      - firstname
+      - firstName
+      - FirstName
+      - first-name
+      - givenName
+    - name: last_name
+      tier: core
+      providers: 19
+      share: 0.655
+      type: string
+      spellings:
+      - last_name
+      - lastname
+      - lastName
+      - LastName
+      - last-name
+      - familyName
+    - name: email
+      tier: core
+      providers: 18
+      share: 0.621
+      type: string
+      spellings:
+      - email
+      - emails
+      - telecom
+      - Email
+    - name: address
+      tier: extended
+      providers: 12
+      share: 0.414
+      type: object
+      spellings:
+      - address
+      - addresses
+    - name: status
+      tier: extended
+      providers: 11
+      share: 0.379
+      type: string
+      spellings:
+      - state
+      - status
+      - State
+    - name: created_at
+      tier: extended
+      providers: 10
+      share: 0.345
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created_date
+    - name: name
+      tier: extended
+      providers: 10
+      share: 0.345
+      type: string
+      spellings:
+      - name
+      - title
+    - name: city
+      tier: extended
+      providers: 9
+      share: 0.31
+      type: string
+      spellings:
+      - city
+      - City
+    - name: middle_name
+      tier: extended
+      providers: 9
+      share: 0.31
+      type: string
+      spellings:
+      - middle_name
+      - MiddleName
+      - middleName
+    - name: updated_at
+      tier: extended
+      providers: 8
+      share: 0.276
+      type: string
+      spellings:
+      - updated_at
+      - modified_at
+      - last_modified
+      - updatedAt
+    - name: description
+      tier: extended
+      providers: 6
+      share: 0.207
+      type: object
+      spellings:
+      - text
+      - notes
+      - details
+    - name: phone
+      tier: extended
+      providers: 6
+      share: 0.207
+      type: array
+      spellings:
+      - phones
+      - mobile-phone
+      - phone
+    - name: pronouns
+      tier: extended
+      providers: 6
+      share: 0.207
+      type: string
+      spellings:
+      - pronouns
+    - name: ssn
+      tier: extended
+      providers: 6
+      share: 0.207
+      type: string
+      spellings:
+      - ssn
+    long_tail_count: 382
+    long_tail_sample:
+    - code
+    - metadata
+    - patient_id
+    - suffix
+    - active
+    - contact
+    - country
+    - language
+    - mrn
+    - preferred_language
+    - address1
+    - emergency_contact
+    - ethnicity
+    - gender_identity
+    - guarantor
+    - practitioner_id
+    - prefix
+    - race
+    - zip
+    - zip_code
+    - address2
+    - address_city
+    - address_line_1
+    - address_line_2
+    - address_state
+    - age
+    - appointments
+    - chart_id
+    - company
+    - deleted
+    - employer
+    - managing_organization
+    - merged_into
+    - occupation
+    - organization_id
+    - password
+    - patient_status
+    - photo
+    - preferred_name
+    - previous_address
+  practitioner:
+    segments_seen:
+      providers: 8
+      practitioner: 7
+      practitioners: 3
+      clinicians: 2
+      doctors: 2
+      provider: 1
+      physicians: 1
+    providers_exposing: 21
+    providers_with_readable_schema: 18
+    operations:
+    - operation: GET collection
+      providers: 21
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 16
+      share: 0.762
+      tier: core
+    - operation: POST collection
+      providers: 9
+      share: 0.429
+      tier: extended
+    - operation: UPDATE item
+      providers: 7
+      share: 0.333
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.19
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.048
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 14
+      share: 0.778
+      type: string
+      spellings:
+      - id
+      - identifier
+      - Id
+      - _id
+      - externalId
+    - name: last_name
+      tier: core
+      providers: 12
+      share: 0.667
+      type: string
+      spellings:
+      - last_name
+      - lastName
+      - lastname
+      - LastName
+      - surname
+    - name: first_name
+      tier: core
+      providers: 11
+      share: 0.611
+      type: string
+      spellings:
+      - first_name
+      - firstName
+      - firstname
+      - FirstName
+    - name: npi
+      tier: core
+      providers: 11
+      share: 0.611
+      type: string
+      spellings:
+      - npi
+      - npiNumber
+      - NPINumber
+      - npi_number
+    - name: specialty
+      tier: core
+      providers: 9
+      share: 0.5
+      type: array
+      spellings:
+      - specialty
+      - qualification
+      - specialties
+      - specialization
+    - name: name
+      tier: extended
+      providers: 8
+      share: 0.444
+      type: string
+      spellings:
+      - name
+      - title
+      - label
+      - display_name
+    - name: email
+      tier: extended
+      providers: 7
+      share: 0.389
+      type: string
+      spellings:
+      - email
+      - Email
+    - name: active
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: boolean
+      spellings:
+      - active
+      - Active
+    - name: code
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - type
+    - name: created_at
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+    - name: updated_at
+      tier: extended
+      providers: 5
+      share: 0.278
+      type: string
+      spellings:
+      - updated_at
+      - modified_at
+      - updatedAt
+    - name: address
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: array
+      spellings:
+      - address
+    - name: description
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: object
+      spellings:
+      - text
+      - description
+    - name: gender
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: string
+      spellings:
+      - gender
+    - name: middle_name
+      tier: extended
+      providers: 4
+      share: 0.222
+      type: string
+      spellings:
+      - middleName
+      - MiddleName
+      - middle_name
+    long_tail_count: 274
+    long_tail_sample:
+    - city
+    - country
+    - language
+    - locations
+    - metadata
+    - status
+    - suffix
+    - website
+    - address1
+    - address2
+    - bio
+    - communication
+    - date_of_birth
+    - education
+    - roles
+    - telecom
+    - tin
+    - user
+    - aca_eligibility
+    - accepts_enrollments_from_employer
+    - accepts_enrollments_from_retail
+    - accreditations
+    - additional_addresses
+    - additional_name
+    - addresses
+    - ahfc_foster_care_only
+    - allowed_ips
+    - alternate_name
+    - alternative_name
+    - amisys_group_record
+    - amisys_info
+    - amisys_provider_record
+    - appointment_availability
+    - appointments
+    - assessments
+    - audit
+    - availabilities
+    - avatar
+    - badge_cert
+    - badges_certifications
+  encounter:
+    segments_seen:
+      encounter: 8
+      visits: 3
+      encounters: 2
+    providers_exposing: 11
+    providers_with_readable_schema: 8
+    operations:
+    - operation: GET collection
+      providers: 10
+      share: 0.909
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.727
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.364
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.273
+      tier: extended
+    - operation: DELETE item
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.75
+      type: string
+      spellings:
+      - id
+      - identifier
+    - name: status
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - status
+      - state
+    - name: type
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - type
+      - class
+      - encounterType
+    - name: patient_id
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: object
+      spellings:
+      - subject
+      - patient
+      - patientId
+    long_tail_count: 59
+    long_tail_sample:
+    - description
+    - account
+    - address
+    - appointment
+    - appointmentid
+    - attendance_type
+    - based_on
+    - city
+    - class_history
+    - code
+    - contained
+    - created_at
+    - departmentid
+    - diagnosis
+    - discharge_disposition
+    - document_ids
+    - encounter_date
+    - encounter_diagnosis
+    - encounter_type_id
+    - encounterdate
+    - encounterid
+    - encountertype
+    - episode_of_care
+    - hospitalization
+    - implicit_rules
+    - language
+    - length
+    - location
+    - location_name
+    - location_type
+    - metadata
+    - modifier_extension
+    - name
+    - npi
+    - page_number
+    - page_size
+    - part_of
+    - patientid
+    - period
+    - postalcode
+  observation:
+    segments_seen:
+      observation: 8
+      vitals: 4
+      observations: 2
+      measurements: 1
+      lab_results: 1
+    providers_exposing: 16
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 15
+      share: 0.938
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.562
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.438
+      tier: extended
+    - operation: UPDATE item
+      providers: 5
+      share: 0.312
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.125
+      tier: long-tail
+    properties:
+    - name: code
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - type
+      - code
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - id
+      - identifier
+    - name: patient_id
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - subject
+      - patient
+      - patient_id
+      - patientId
+    - name: category
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: array
+      spellings:
+      - category
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: object
+      spellings:
+      - text
+      - note
+    - name: encounter_id
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: object
+      spellings:
+      - encounter
+      - encounter_id
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - status
+    long_tail_count: 93
+    long_tail_sample:
+    - created_at
+    - effective_at
+    - practitioner_id
+    - reference_range
+    - temperature
+    - timestamp
+    - value
+    - weight
+    - abnormal_status
+    - based_on
+    - bfm
+    - blood_glucose
+    - blood_glucose_unit
+    - bmi
+    - bmi_percentile
+    - body_site
+    - bodyfat
+    - bp
+    - chart_date
+    - comments
+    - component
+    - contained
+    - custom_observations
+    - data_absent_reason
+    - deleted_date
+    - derived_from
+    - device
+    - diastolic
+    - dlm
+    - document
+    - document_date
+    - document_ids
+    - effective_instant
+    - effective_period
+    - effective_timing
+    - focus
+    - group_code
+    - has_member
+    - hc
+    - heart_rate
+  condition:
+    segments_seen:
+      condition: 8
+      problems: 3
+      diagnoses: 2
+      conditions: 1
+    providers_exposing: 13
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 12
+      share: 0.923
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.615
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.308
+      tier: extended
+    - operation: UPDATE item
+      providers: 4
+      share: 0.308
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.154
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    properties:
+    - name: code
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - type
+      - code
+      - codeSystem
+      - codes
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - id
+      - identifier
+    - name: status
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - status
+      - clinicalStatus
+      - verificationStatus
+      - verification_status
+    - name: description
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - description
+      - text
+      - note
+      - notes
+    - name: patient_id
+      tier: core
+      providers: 5
+      share: 0.5
+      type: object
+      spellings:
+      - patient
+      - subject
+      - patientId
+    - name: onset_at
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - onsetDateTime
+      - onsetDate
+    - name: category
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: array
+      spellings:
+      - category
+    long_tail_count: 59
+    long_tail_sample:
+    - body_site
+    - created_at
+    - icd_code
+    - name
+    - severity
+    - stage
+    - abatement_age
+    - abatement_date
+    - abatement_date_time
+    - abatement_period
+    - abatement_range
+    - abatement_string
+    - appointment
+    - asserter
+    - body_sites
+    - condition_name
+    - contained
+    - date
+    - date_changed
+    - date_diagnosis
+    - date_onset
+    - deleted_date
+    - diagnosis_id
+    - diagnosis_type
+    - doctor
+    - document_ids
+    - dx
+    - encounter_date
+    - encounter_id
+    - evidence
+    - histology_and_morphology
+    - icd_code_set
+    - icd_version
+    - implicit_rules
+    - info_url
+    - is_cancer_related
+    - language
+    - metadata
+    - metastatic_sites
+    - modifier_extension
+  prescription:
+    segments_seen:
+      medicationrequest: 7
+      prescriptions: 4
+      prescription: 3
+      medications: 1
+    providers_exposing: 13
+    providers_with_readable_schema: 9
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 7
+      share: 0.538
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.308
+      tier: extended
+    - operation: UPDATE item
+      providers: 2
+      share: 0.154
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    properties:
+    - name: dosage
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - dosageInstruction
+      - Directions
+      - dosage
+      - dose
+    - name: id
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - id
+      - identifier
+      - PrescriptionId
+      - Id
+    - name: code
+      tier: extended
+      providers: 4
+      share: 0.444
+      type: string
+      spellings:
+      - type
+    - name: medication
+      tier: extended
+      providers: 4
+      share: 0.444
+      type: string
+      spellings:
+      - medicationCodeableConcept
+      - Medication
+      - medicationName
+      - ndc
+      - medication_name
+    - name: status
+      tier: extended
+      providers: 4
+      share: 0.444
+      type: string
+      spellings:
+      - status
+      - Status
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: object
+      spellings:
+      - text
+      - note
+      - notes
+    - name: patient_id
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: object
+      spellings:
+      - subject
+      - patientId
+    long_tail_count: 101
+    long_tail_sample:
+    - created_at
+    - days_supply
+    - encounter_id
+    - frequency
+    - intent
+    - medication_reference
+    - practitioner_id
+    - reason_code
+    - based_on
+    - care_plan_id
+    - category
+    - contained
+    - course_of_therapy_type
+    - create_date_time
+    - current_rx_status_text
+    - date_filled_utc
+    - date_written
+    - dea_schedule
+    - detected_issue
+    - direct_transfer_token
+    - dispense_request
+    - dispense_unit_id
+    - do_not_perform
+    - end_date
+    - end_time
+    - event_history
+    - expiration_date
+    - expiration_date_utc
+    - fillable
+    - formulary
+    - generic_name
+    - group_identifier
+    - icd_codes
+    - implicit_rules
+    - indication
+    - instantiates_canonical
+    - instantiates_uri
+    - insurance
+    - is_daw
+    - is_refill
+  coverage:
+    segments_seen:
+      coverage: 6
+      eligibility: 3
+      eligibility_checks: 1
+      insurances: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 8
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 0.889
+      tier: core
+    - operation: GET item
+      providers: 7
+      share: 0.778
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.444
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.75
+      type: string
+      spellings:
+      - id
+      - identifier
+    - name: code
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - type
+      - codes
+    - name: patient_id
+      tier: core
+      providers: 5
+      share: 0.625
+      type: object
+      spellings:
+      - beneficiary
+      - patient
+      - patient_id
+    - name: payer
+      tier: core
+      providers: 5
+      share: 0.625
+      type: array
+      spellings:
+      - payor
+      - payer_id
+    - name: relationship
+      tier: core
+      providers: 4
+      share: 0.5
+      type: object
+      spellings:
+      - relationship
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.5
+      type: string
+      spellings:
+      - status
+      - state
+    - name: member_number
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - subscriberId
+    - name: period
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: object
+      spellings:
+      - period
+    long_tail_count: 35
+    long_tail_sample:
+    - class
+    - description
+    - group_number
+    - appointment
+    - cob_level
+    - coverage_details
+    - coverage_end
+    - coverage_start
+    - coverage_subscriber
+    - dependent
+    - document_ids
+    - eligibility_check_timestamp
+    - eligibility_details
+    - eligibility_status
+    - funnel_id
+    - group_name
+    - group_npi
+    - implicit_rules
+    - language
+    - page_number
+    - page_size
+    - patient_insurance_id
+    - payer_name
+    - payor_type
+    - practice_id
+    - query_date
+    - request_service_type
+    - service_type_description
+    - signature
+    - sort_field
+    - sort_is_descending
+    - subscriber
+    - subscriber_type
+    - timestamp
+    - updated_at
+  health_claim:
+    segments_seen:
+      claims: 5
+      explanationofbenefit: 3
+      claim: 1
+    providers_exposing: 8
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.25
+      tier: long-tail
+    - operation: POST collection
+      providers: 2
+      share: 0.25
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.25
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - identifier
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - status
+    - name: code
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - type
+    - name: patient_id
+      tier: core
+      providers: 3
+      share: 0.5
+      type: object
+      spellings:
+      - patient
+      - patient_id
+    - name: payer
+      tier: core
+      providers: 3
+      share: 0.5
+      type: object
+      spellings:
+      - insurer
+      - payor
+    - name: practitioner_id
+      tier: core
+      providers: 3
+      share: 0.5
+      type: object
+      spellings:
+      - provider
+      - provider_id
+    - name: service_date
+      tier: core
+      providers: 3
+      share: 0.5
+      type: object
+      spellings:
+      - billablePeriod
+      - date_of_service
+    long_tail_count: 66
+    long_tail_sample:
+    - created_at
+    - description
+    - diagnosis
+    - insurance
+    - item
+    - metadata
+    - payment
+    - procedure
+    - use
+    - accident
+    - add_item
+    - adjudication
+    - benefit_balance
+    - benefit_period
+    - billedamount
+    - care_team
+    - charge_payouts
+    - charges
+    - claim_response
+    - claim_type
+    - claimid
+    - contained
+    - deleted_at
+    - disposition
+    - enterer
+    - facility
+    - form
+    - form_code
+    - funds_reserve
+    - funds_reserve_requested
+    - guarantor
+    - guarantor_id
+    - implicit_rules
+    - language
+    - location_id
+    - modifier_extension
+    - organization
+    - original_prescription
+    - outcome
+    - patient_copay_amount

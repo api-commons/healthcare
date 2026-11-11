@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/healthcare/main/schema/patient.json",
+  "title": "Patient",
+  "description": "The common patient in Healthcare, distilled from 29 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "date_of_birth": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.793,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "dob",
+        "date_of_birth",
+        "dateOfBirth",
+        "birthDate",
+        "birthdate",
+        "DateOfBirth"
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.759,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "gender",
+        "sex",
+        "Gender"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.759,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "id",
+        "identifier",
+        "externalId",
+        "external_id",
+        "Id",
+        "_id"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.655,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "first_name",
+        "firstname",
+        "firstName",
+        "FirstName",
+        "first-name",
+        "givenName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.655,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "last_name",
+        "lastname",
+        "lastName",
+        "LastName",
+        "last-name",
+        "familyName"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.621,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "email",
+        "emails",
+        "telecom",
+        "Email"
+      ],
+      "format": "email"
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.414,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "address",
+        "addresses"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.379,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "state",
+        "status",
+        "State"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.345,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "created_date"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.345,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.31,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "city",
+        "City"
+      ]
+    },
+    "middle_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.31,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "middle_name",
+        "MiddleName",
+        "middleName"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.276,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "updated_at",
+        "modified_at",
+        "last_modified",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "text",
+        "notes",
+        "details"
+      ]
+    },
+    "phone": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "phones",
+        "mobile-phone",
+        "phone"
+      ]
+    },
+    "pronouns": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "pronouns"
+      ]
+    },
+    "ssn": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "ssn"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "healthcare",
+    "concept": "patient",
+    "providers": 29,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

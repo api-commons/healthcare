@@ -1,0 +1,60 @@
+provider: dosespot
+apis_io: https://apis.io/providers/dosespot/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: DateOfBirth
+      gender: Gender
+      id: Id
+      first_name: FirstName
+      last_name: LastName
+      email: Email
+      status: State
+      city: City
+      middle_name: MiddleName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/dosespot-openapi.yml#GET /patients
+    - openapi/_original/dosespot-openapi.yml#GET /patients/{patientId}
+    - openapi/_original/dosespot-openapi.yml#POST /patients
+    - openapi/_original/dosespot-openapi.yml#POST /patients/{patientId}
+    - openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json#GET /api/patients/{patientId}
+  practitioner:
+    path_segment:
+    - clinicians
+    properties:
+      id: Id
+      last_name: LastName
+      first_name: FirstName
+      npi: NPINumber
+      email: Email
+      active: Active
+      middle_name: MiddleName
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/dosespot-openapi.yml#GET /clinicians
+    - openapi/_original/dosespot-openapi.yml#GET /clinicians/{clinicianId}
+    - openapi/_original/dosespot-openapi.yml#POST /clinicians
+    - openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json#DELETE /api/clinics/{clinicId}/clinicians
+    - openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json#GET /api/clinicians/{clinicianId}
+  prescription:
+    path_segment:
+    - prescriptions
+    properties:
+      dosage: Directions
+      id:
+      - PrescriptionId
+      - Id
+      medication: Medication
+      status: Status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/dosespot-openapi.yml#GET /patients/{patientId}/prescriptions
+    - openapi/_original/dosespot-openapi.yml#GET /patients/{patientId}/prescriptions/{prescriptionId}
+    - openapi/_original/dosespot-openapi.yml#POST /patients/{patientId}/prescriptions
+    - openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json#DELETE /api/patients/{patientId}/prescriptions
+    - openapi/_original/dosespot-rest-api-full-epcs-v2-swagger.json#GET /api/patients/{patientId}/prescriptions

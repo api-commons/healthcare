@@ -1,0 +1,142 @@
+context: healthcare
+name: Healthcare
+intro: >-
+  The common healthcare vocabulary -- patients and the practitioners who treat them, the
+  encounters where care happens, the observations, conditions and prescriptions recorded,
+  and the coverage and claims that pay for it -- distilled from the APIs that already exist,
+  the FHIR standard included. Appointments belong to the scheduling context.
+tags: [Healthcare, Digital Health, Telehealth, Health Tech, FHIR, Electronic Health Records, EHR, Health Insurance, Healthtech]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, entry, resourceType, resource_type, link]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, identifier, identifiers, external_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, recorded_date, recorded_at, authored_on]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, last_updated]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, extension, extensions, meta]
+  status: [state, clinical_status, verification_status]
+  name: [title, display_name, label]
+  description: [notes, note, details, text, comment]
+  patient_id: [patient, subject, subject_id, member_id, beneficiary, client_id, person_id]
+  practitioner_id: [practitioner, provider_id, provider, performer, doctor_id, clinician_id, physician_id, requester, recorder, participant]
+  encounter_id: [encounter, visit_id, visit, appointment_id]
+  code: [codes, coding, code_system, icd10, icd_10, snomed, loinc, cpt, type]
+
+concepts:
+  patient:
+    segments: [patients, patient, members@health|plans, clients@clinic|health]
+    aliases:
+      first_name: [firstname, given_name, given, first]
+      last_name: [lastname, family_name, family, surname, last]
+      date_of_birth: [dob, birth_date, birthdate, birth_date_time]
+      gender: [sex, administrative_gender, sex_at_birth]
+      email: [email_address, emails, telecom]
+      phone: [phone_number, phones, mobile, mobile_phone]
+      address: [addresses, home_address]
+      mrn: [medical_record_number, chart_number, patient_number]
+  practitioner:
+    requires: [patient]
+    segments: [practitioners, practitioner, providers, provider, doctors, physicians, clinicians, staff@clinic|practices]
+    aliases:
+      first_name: [firstname, given_name, given]
+      last_name: [lastname, family_name, family, surname]
+      npi: [national_provider_identifier, npi_number]
+      specialty: [specialties, specialization, qualification, taxonomy]
+  encounter:
+    requires: [patient]
+    segments: [encounters, encounter, visits, visit, consultations, sessions@telehealth|visits]
+    aliases:
+      start_at: [period_start, start, start_time, started_at, date, visit_date]
+      end_at: [period_end, end, end_time, ended_at]
+      type: [class, encounter_type, visit_type, kind]
+      reason: [reason_code, chief_complaint, reason_for_visit]
+  observation:
+    requires: [patient]
+    segments: [observations, observation, vitals, vital_signs, lab_results, labresults, results@labs|lab, measurements]
+    aliases:
+      value: [value_quantity, result, measurement, reading, value_string]
+      unit: [units, unit_of_measure, uom]
+      effective_at: [effective_date_time, observed_at, measured_at, collected_at, date]
+      reference_range: [normal_range, range, reference_ranges]
+  condition:
+    requires: [patient]
+    segments: [conditions, condition, diagnoses, diagnosis, problems, problem_list]
+    aliases:
+      onset_at: [onset_date_time, onset_date, onset, diagnosed_at, date_of_diagnosis]
+      severity: [acuity]
+  prescription:
+    requires: [patient]
+    segments: [prescriptions, prescription, medication_requests, medicationrequests, medicationrequest, medications@patients|patient, orders@medication|rx]
+    aliases:
+      medication: [medication_codeable_concept, drug, medication_name, drug_name, rx_norm, ndc]
+      dosage: [dosage_instruction, dose, sig, instructions, directions]
+      quantity: [dispense_quantity, qty, amount]
+      refills: [number_of_repeats_allowed, refill_count]
+  coverage:
+    requires: [patient]
+    segments: [coverages, coverage, eligibility, eligibility_checks, insurance_policies, insurances, plans@insurance|coverage]
+    aliases:
+      payer: [payer_id, payor, payor_id, insurer, insurance_company, carrier]
+      member_number: [member_id_number, subscriber_id, policy_number, member_number_id]
+      group_number: [group_id, group]
+      start_date: [period_start, effective_date, start]
+      end_date: [period_end, termination_date, end]
+  health_claim:
+    requires: [patient]
+    path: /health-claims
+    segments: [claims, claim, explanation_of_benefits, explanationofbenefit, eob, claim_submissions]
+    aliases:
+      total: [total_charge, billed_amount, total_amount, charge_amount, amount]
+      paid_amount: [payment_amount, amount_paid, paid]
+      service_date: [date_of_service, billable_period, service_date_from]
+      payer: [payer_id, payor, insurer]
+
+# FHIR implementers: every provider whose matches are ALL FHIR resource paths (/Patient,
+# /Observation, /Coverage...) is one voice -- the vocabulary is HL7's. Providers that publish
+# FHIR alongside their own API (athenahealth, Tebra, AdvancedMD, Particle) are counted alone.
+shared_specs:
+  hl7-fhir: [
+    aetna, amerihealth-caritas, canvas-medical, charmhealth, childrens-hospital-of-philadelphia,
+    cigna, clevercarehealthplan, clover-health, cms-blue-button, community-health-systems,
+    devoted-health, elevance-health, fhir, flexpa, gp-connect, health-gorilla,
+    independence-blue-cross, jefferson-health, lifen, meditech, modernizing-medicine,
+    nextgen-healthcare, nhs-api, oracle-health, penn-medicine, smarthealthit, sun-life,
+    temple-health, tenet-healthcare, unitedhealth, unitedhealthcare, varian-medical-systems]
+duplicates:
+  oracle-health: [cerner]
+  cdc: [cdc-gov]
+  vitagroup: [ehrbase]
+  junction-com: [vital-io]
+  nhs-england: [nhs-api, nhs-digital]
+  thatch: [thatch-health]
+
+findings:
+  - "FHIR is to healthcare what Open Banking is to banking: 32 providers in this cohort publish
+    nothing but FHIR resources. Counted once as HL7's voice, the market's own agreement shows."
+  - "A patient agrees on date of birth, gender, name and email -- the demographic core every EHR,
+    telehealth platform and payer API carries."
+  - "A practitioner agrees on name, NPI and specialty: the National Provider Identifier is the
+    one identifier the US market shares."
+  - "Coverage agrees on the payer, the member's relationship and status, and a claim on its
+    patient, practitioner, payer and date of service -- the payer side of healthcare is more
+    uniform than the clinical side."
+  - "Clinical records (observations, conditions, prescriptions) agree only on a code and the
+    patient: the code is the vocabulary (LOINC, SNOMED, ICD-10, RxNorm), and the structure
+    around it is the provider's."
+decisions:
+  - "Every provider that publishes only FHIR resources counts once, as `hl7-fhir`, with its own
+    crosswalk. Providers with FHIR alongside a proprietary API (athenahealth, Tebra,
+    AdvancedMD, Particle, the NHS and VA) are counted on their own."
+  - "Appointments are the scheduling context's; health insurance -- coverage and claims -- is
+    this context's, handed over from insurance."
+  - "A practitioner is `/practitioners` (FHIR's word), though eight providers say `providers`:
+    `/providers` means an API provider or a service provider in other contexts."
+  - "A prescription covers FHIR's MedicationRequest and medication orders beneath a patient."
+  - "A health claim is `/health-claims` and covers Explanation of Benefit; `/claims` is the
+    insurance context's."
+  - "Visits and consultations are encounters; vitals, lab results and measurements are
+    observations; problems and diagnoses are conditions; eligibility checks are coverage."
+  - "Duplicates merged: Cerner into Oracle Health, CDC, EHRbase into vitagroup, Vital into
+    Junction, three NHS listings into NHS England, Thatch."

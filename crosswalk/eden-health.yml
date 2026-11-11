@@ -1,0 +1,47 @@
+provider: eden-health
+apis_io: https://apis.io/providers/eden-health/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patient
+    properties:
+      date_of_birth: dob
+      gender: sex
+      first_name: first-name
+      last_name: last-name
+      email: email
+      status: state
+      city: city
+      phone: mobile-phone
+      pronouns: pronouns
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/eden-health-grdn-openapi-original.json#GET /v2/patient
+    - openapi/_original/eden-health-grdn-openapi-original.json#GET /v2/patient/{patient-id}
+    - openapi/_original/eden-health-grdn-openapi-original.json#POST /v2/patient
+    - openapi/_original/eden-health-grdn-openapi-original.json#PUT /v2/patient/{patient-id}
+  encounter:
+    path_segment:
+    - encounter
+    - visits
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/eden-health-grdn-openapi-original.json#GET /v2/patient/{patient-id}/encounter/{encounter-id}
+    - openapi/_original/eden-health-grdn-openapi-original.json#GET /v2/patient/{patient-id}/visits
+  prescription:
+    path_segment:
+    - prescription
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/eden-health-grdn-openapi-original.json#GET /v2/patient/{patient-id}/prescription
+  coverage:
+    path_segment:
+    - eligibility
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/eden-health-grdn-openapi-original.json#PUT /v2/patient/{patient-id}/insurance/{insurance-id}/eligibility

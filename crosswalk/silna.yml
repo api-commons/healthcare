@@ -1,0 +1,39 @@
+provider: silna
+apis_io: https://apis.io/providers/silna/
+context: healthcare
+generated: '2026-11-10'
+concepts:
+  patient:
+    path_segment:
+    - patients
+    properties:
+      date_of_birth: date_of_birth
+      gender: sex
+      id: id
+      first_name: first_name
+      last_name: last_name
+      status:
+      - state
+      - status
+      city: city
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/silna-openapi.json#DELETE /public/v1/patients/{patient_id}
+    - openapi/_original/silna-openapi.json#GET /public/v1/patients/
+    - openapi/_original/silna-openapi.json#GET /public/v1/patients/{patient_id}
+    - openapi/_original/silna-openapi.json#PATCH /public/v1/patients/{patient_id}
+    - openapi/_original/silna-openapi.json#POST /public/v1/patients/
+  practitioner:
+    path_segment:
+    - providers
+    - clinicians
+    properties:
+      id: id
+      last_name: last_name
+      first_name: first_name
+      npi: npi
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/silna-openapi.json#GET /public/v1/clinicians/
+    - openapi/_original/silna-openapi.json#GET /public/v1/providers/
+    - openapi/_original/silna-openapi.json#GET /public/v1/providers/{provider_id}
