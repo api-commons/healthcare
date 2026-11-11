@@ -140,3 +140,6 @@ decisions:
     observations; problems and diagnoses are conditions; eligibility checks are coverage."
   - "Duplicates merged: Cerner into Oracle Health, CDC, EHRbase into vitagroup, Vital into
     Junction, three NHS listings into NHS England, Thatch."
+standards:
+  - standard: fhir-r4
+    concepts: {patient: [fhir.schema.Patient], practitioner: [fhir.schema.Practitioner], encounter: [fhir.schema.Encounter], observation: [fhir.schema.Observation], condition: [fhir.schema.Condition], prescription: [fhir.schema.MedicationRequest], coverage: [fhir.schema.Coverage], health_claim: [fhir.schema.Claim]}

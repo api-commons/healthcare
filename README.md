@@ -35,6 +35,23 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 - Coverage agrees on the payer, the member's relationship and status, and a claim on its patient, practitioner, payer and date of service -- the payer side of healthcare is more uniform than the clinical side.
 - Clinical records (observations, conditions, prescriptions) agree only on a code and the patient: the code is the vocabulary (LOINC, SNOMED, ICD-10, RxNorm), and the structure around it is the provider's.
 
+## Measured against the standard
+
+The census reads what providers publish. Where the domain has a standard, the standard's own
+definition is read as one more voice: how much of the measured core it defines, and what it
+defines that no provider in the cohort publishes. Crosswalks are in [standards/](standards).
+
+| Standard | Concept | Core defined by the standard | Fields only the standard has |
+| --- | --- | ---: | ---: |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `patient` | 67% | 12 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `practitioner` | 50% | 6 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `encounter` | 100% | 8 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `observation` | 100% | 20 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `condition` | 100% | 6 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `prescription` | 67% | 19 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `coverage` | 100% | 11 |
+| [fhir-r4](https://hl7.org/fhir/R4/fhir.schema.json.zip) | `health_claim` | 100% | 9 |
+
 ## Artifacts
 
 - [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
